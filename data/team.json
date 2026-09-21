@@ -1,0 +1,14 @@
+{
+  "_comment": "Équipe du projet — fichier facilement modifiable. Ne pas inventer les emails manquants.",
+  "team": [
+    { "name": "Raed Azouzi", "email": "mohamedraed.azouzi@etudiant-isi.utm.tn" },
+    { "name": "Adem Hmila", "email": "" },
+    { "name": "Assyl Khamila", "email": "" },
+    { "name": "Yassmin Fouratii", "email": "" },
+    { "name": "Islem Ayari", "email": "" },
+    { "name": "Yakin Mkadem", "email": "" }
+  ],
+  "disclaimer_fr": "⚠️ Allez-y à l'ISI est un projet indépendant réalisé à des fins éducatives et pratiques. Ce site n'est pas officiel et n'est pas affilié à l'administration de l'ISI. Le projet est actuellement en cours de développement.",
+  "disclaimer_en": "⚠️ Allez-y à l'ISI is an independent project created for educational and practical purposes. This site is not official and is not affiliated with ISI administration. The project is currently under development.",
+  "disclaimer_ar": "⚠️ Allez-y à l'ISI هو مشروع مستقل تم إنجازه لأغراض تعليمية وعملية. هذا الموقع غير رسمي وغير تابع لإدارة المعهد الأعلى للإعلامية. المشروع قيد التطوير حاليًا."
+}

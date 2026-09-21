@@ -1,0 +1,15 @@
+{
+  "_comment": "Profils étudiants de démonstration - modifiable facilement.",
+  "students": [
+    {
+      "id": "raed-azouzi",
+      "name": "Mohamed Raed Azouzi",
+      "email": "mohamedraed.azouzi@etudiant-isi.utm.tn",
+      "level": "1ère année",
+      "cycle": "Prépa Intégrée",
+      "group": "G2",
+      "semester": 1,
+      "parcours": "Tronc Commun"
+    }
+  ]
+}

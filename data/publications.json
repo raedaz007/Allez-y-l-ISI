@@ -1,0 +1,27 @@
+{
+  "_comment": "AJOUTER / MODIFIER LES PUBLICATIONS ICI. Chaque publication: id, title, content, date (AAAA-MM-JJ), category (information|evenement|examen|cours|administration|important). Support i18n via title_fr/title_en/title_ar (fallback sur 'title').",
+  "publications": [
+    {
+      "id": 1,
+      "category": "information",
+      "date": "2026-09-15",
+      "title_fr": "Bienvenue sur Allez-y à l'ISI",
+      "title_en": "Welcome to Allez-y à l'ISI",
+      "title_ar": "مرحبا بكم في Allez-y à l'ISI",
+      "content_fr": "Cette plateforme est un projet étudiant indépendant, en cours de développement, pour faciliter la vie universitaire à l'ISI. Vos retours sont les bienvenus.",
+      "content_en": "This platform is an independent, in-development student project to make university life at ISI easier. Feedback is welcome.",
+      "content_ar": "هذه المنصة هي مشروع طلابي مستقل قيد التطوير لتسهيل الحياة الجامعية في المعهد. ملاحظاتكم مرحب بها."
+    },
+    {
+      "id": 2,
+      "category": "important",
+      "date": "2026-09-15",
+      "title_fr": "Projet non officiel",
+      "title_en": "Unofficial project",
+      "title_ar": "مشروع غير رسمي",
+      "content_fr": "Allez-y à l'ISI n'est pas affilié à l'administration de l'ISI. Les données affichées (emploi du temps, salles, etc.) sont des données de démonstration sauf indication contraire.",
+      "content_en": "Allez-y à l'ISI is not affiliated with ISI administration. Displayed data (timetable, rooms, etc.) is demo data unless stated otherwise.",
+      "content_ar": "لا يرتبط Allez-y à l'ISI بإدارة المعهد. البيانات المعروضة هي بيانات توضيحية ما لم يُذكر خلاف ذلك."
+    }
+  ]
+}

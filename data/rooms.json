@@ -1,0 +1,15 @@
+{
+  "_comment": "Salles connues à partir de l'emploi du temps de démonstration. Positions non fournies = non inventées.",
+  "rooms": [
+    { "id": "A124", "name": "A124", "block": "A", "floor": 1, "roomNumber": "24" },
+    { "id": "A131", "name": "A131", "block": "A", "floor": 1, "roomNumber": "31" },
+    { "id": "A206", "name": "A206", "block": "A", "floor": 2, "roomNumber": "06" },
+    { "id": "A208", "name": "A208", "block": "A", "floor": 2, "roomNumber": "08" },
+    { "id": "A209", "name": "A209", "block": "A", "floor": 2, "roomNumber": "09" },
+    { "id": "A402", "name": "A402", "block": "A", "floor": 4, "roomNumber": "02" },
+    { "id": "B302", "name": "B302", "block": "B", "floor": 3, "roomNumber": "02" },
+    { "id": "B401", "name": "B401", "block": "B", "floor": 4, "roomNumber": "01" },
+    { "id": "C101", "name": "C101", "block": "C", "floor": 1, "roomNumber": "01" },
+    { "id": "C402", "name": "C402", "block": "C", "floor": 4, "roomNumber": "02" }
+  ]
+}

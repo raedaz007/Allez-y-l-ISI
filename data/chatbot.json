@@ -1,0 +1,175 @@
+{
+  "_comment": "Base de questions du chatbot. Chaque entrée: id, category, questions[] (variantes fr/en/ar), answerType (static|dynamic), answer (si static) ou dynamicKey (si dynamic, traité par chatbot.js).",
+  "entries": [
+    {
+      "id": 1,
+      "category": "timetable-next",
+      "questions": [
+        "quel est mon prochain cours", "c'est quoi mon prochain cours", "j'ai quoi après", "prochain cours",
+        "what's my next class", "what is my next class", "next class", "what do i have next",
+        "ما هو الدرس القادم", "ما هي حصتي القادمة", "ماذا لدي بعد"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "next-session"
+    },
+    {
+      "id": 2,
+      "category": "timetable-room",
+      "questions": [
+        "où est ma prochaine salle", "où est ma prochaine séance", "dans quelle salle est mon prochain cours",
+        "where is my next room", "where is my next class", "which room is next",
+        "أين قاعتي القادمة", "أين حصتي القادمة"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "next-room"
+    },
+    {
+      "id": 3,
+      "category": "timetable-today",
+      "questions": [
+        "qu'est-ce que j'ai aujourd'hui", "mon emploi du temps aujourd'hui", "combien de séances aujourd'hui",
+        "what do i have today", "my schedule today", "how many classes today",
+        "ماذا لدي اليوم", "جدولي اليوم"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "today-sessions"
+    },
+    {
+      "id": 4,
+      "category": "timetable-tomorrow",
+      "questions": [
+        "qu'est-ce que j'ai demain", "mon emploi du temps demain",
+        "what do i have tomorrow", "my schedule tomorrow",
+        "ماذا لدي غدا", "جدولي غدا"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "tomorrow-sessions"
+    },
+    {
+      "id": 5,
+      "category": "room-lookup",
+      "questions": [
+        "où est a206", "comment trouver a206", "localiser une salle", "où se trouve la salle",
+        "where is room a206", "how to find a206", "find a room",
+        "أين توجد القاعة a206", "كيف أجد القاعة"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "room-lookup"
+    },
+    {
+      "id": 6,
+      "category": "teacher-lookup",
+      "questions": [
+        "qui enseigne analyse 1", "qui est mon enseignant", "qui donne le cours de",
+        "who teaches analysis 1", "who is my teacher", "who teaches",
+        "من يدرس analyse 1", "من هو أستاذي"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "teacher-lookup"
+    },
+    {
+      "id": 7,
+      "category": "revision",
+      "questions": [
+        "que dois-je réviser aujourd'hui", "que réviser", "quoi étudier aujourd'hui",
+        "what should i revise today", "what to study today",
+        "ماذا أراجع اليوم", "ماذا أدرس اليوم"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "revision-today"
+    },
+    {
+      "id": 8,
+      "category": "resources",
+      "questions": [
+        "où trouver les ressources de ma matière", "ressources d'une matière", "vidéos d'une matière",
+        "where to find resources for my subject", "subject resources",
+        "أين أجد موارد مادتي"
+      ],
+      "answerType": "static",
+      "answer_fr": "Ouvre 🎓 Prépa Intégrée, choisis ton semestre puis la matière : tu y trouveras les chapitres avec cours, exercices, corrigés et vidéos disponibles.",
+      "answer_en": "Open 🎓 Prépa Intégrée, pick your semester then the subject: you'll find chapters with courses, exercises, corrections and available videos.",
+      "answer_ar": "افتح 🎓 السنة التحضيرية، اختر الفصل ثم المادة: ستجد الفصول مع الدروس والتمارين والحلول والفيديوهات المتاحة."
+    },
+    {
+      "id": 9,
+      "category": "exercises",
+      "questions": [
+        "quels exercices faire", "des exercices pour", "exercices à faire",
+        "what exercises should i do", "exercises for",
+        "ما هي التمارين التي يجب أن أقوم بها"
+      ],
+      "answerType": "static",
+      "answer_fr": "Chaque chapitre de la section Prépa contient une zone Exercices et Corrigés. Ouvre le chapitre concerné pour les consulter.",
+      "answer_en": "Each chapter in the Prépa section has an Exercises and Corrections area. Open the relevant chapter to see them.",
+      "answer_ar": "يحتوي كل فصل في قسم السنة التحضيرية على تمارين وحلول. افتح الفصل المعني للاطلاع عليها."
+    },
+    {
+      "id": 10,
+      "category": "greeting",
+      "questions": [
+        "bonjour", "salut", "hello", "hi", "hey", "مرحبا", "أهلا", "السلام عليكم"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "greeting"
+    },
+    {
+      "id": 11,
+      "category": "help-organisation",
+      "questions": [
+        "comment organiser mes révisions", "conseils d'organisation", "comment bien travailler",
+        "how to organize my revision", "study tips", "organization advice",
+        "كيف أنظم مراجعتي", "نصائح للتنظيم"
+      ],
+      "answerType": "static",
+      "answer_fr": "Utilise ✅ Mes tâches pour lister ce qu'il reste à faire, ⏱️ Pomodoro pour des sessions de 25 minutes, et coche ta progression chapitre par chapitre dans la Prépa.",
+      "answer_en": "Use ✅ My Tasks to list what's left to do, ⏱️ Pomodoro for 25-minute sessions, and track your progress chapter by chapter in Prépa.",
+      "answer_ar": "استخدم ✅ مهامي لتحديد ما تبقى، ⏱️ بومودورو لجلسات 25 دقيقة، وتابع تقدمك فصلاً بفصل في السنة التحضيرية."
+    },
+    {
+      "id": 12,
+      "category": "prepa-info",
+      "questions": [
+        "c'est quoi la prépa intégrée", "explique la prépa", "qu'est-ce que la prépa",
+        "what is prépa intégrée", "explain prépa",
+        "ما هي السنة التحضيرية"
+      ],
+      "answerType": "static",
+      "answer_fr": "La Prépa Intégrée est le cycle préparatoire de 2 ans (Info-Sup puis Info-Spé) avant le cycle ingénieur de 3 ans. Elle est organisée en semestres, UE et ECUE, selon le plan d'études officiel.",
+      "answer_en": "Prépa Intégrée is the 2-year preparatory cycle (Info-Sup then Info-Spé) before the 3-year engineering cycle. It's organized into semesters, UEs and ECUEs, per the official study plan.",
+      "answer_ar": "السنة التحضيرية المدمجة هي دورة تحضيرية مدتها سنتان قبل دورة المهندس التي تدوم 3 سنوات، وهي منظمة في فصول ووحدات تعليمية."
+    },
+    {
+      "id": 13,
+      "category": "profile",
+      "questions": [
+        "quel est mon groupe", "dans quel groupe suis-je", "mon profil",
+        "what is my group", "what group am i in", "my profile",
+        "ما هي مجموعتي", "ملفي الشخصي"
+      ],
+      "answerType": "dynamic",
+      "dynamicKey": "profile-info"
+    },
+    {
+      "id": 14,
+      "category": "building",
+      "questions": [
+        "comment est organisé le bâtiment", "combien d'étages", "explorer le bâtiment",
+        "how is the building organized", "how many floors", "explore the building",
+        "كيف ينظم المبنى", "كم عدد الطوابق"
+      ],
+      "answerType": "static",
+      "answer_fr": "Le bâtiment comporte un rez-de-chaussée et plusieurs étages. Ouvre 🗺️ Explorer l'ISI pour visualiser chaque niveau et chercher une salle.",
+      "answer_en": "The building has a ground floor and several upper floors. Open 🗺️ Explore ISI to view each level and search for a room.",
+      "answer_ar": "يحتوي المبنى على طابق أرضي وعدة طوابق. افتح 🗺️ استكشف المعهد لعرض كل طابق والبحث عن قاعة."
+    }
+  ],
+  "suggestions": [
+    { "icon": "📅", "text_fr": "Quel est mon prochain cours ?", "text_en": "What's my next class?", "text_ar": "ما هو الدرس القادم؟" },
+    { "icon": "🏫", "text_fr": "Où est ma prochaine salle ?", "text_en": "Where is my next room?", "text_ar": "أين قاعتي القادمة؟" },
+    { "icon": "👨‍🏫", "text_fr": "Qui est mon enseignant ?", "text_en": "Who is my teacher?", "text_ar": "من هو أستاذي؟" },
+    { "icon": "📚", "text_fr": "Que dois-je réviser ?", "text_en": "What should I revise?", "text_ar": "ماذا أراجع؟" },
+    { "icon": "🎓", "text_fr": "Ressources de ma matière ?", "text_en": "Resources for my subject?", "text_ar": "موارد مادتي؟" },
+    { "icon": "⏰", "text_fr": "Qu'est-ce que j'ai demain ?", "text_en": "What do I have tomorrow?", "text_ar": "ماذا لدي غدا؟" }
+  ]
+}

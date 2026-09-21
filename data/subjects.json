@@ -1,0 +1,16 @@
+{
+  "_comment": "Matières du Semestre 1 (démonstration), issues de l'emploi du temps fourni.",
+  "subjects": [
+    { "id": "analyse-1", "name": "Analyse 1", "code": "UEF112", "icon": "📐" },
+    { "id": "algebre-1", "name": "Algèbre 1", "code": "UEF111", "icon": "🔢" },
+    { "id": "asd", "name": "ASD", "code": "UEF121", "icon": "🧮" },
+    { "id": "atelier-prog-1", "name": "Atelier Programmation 1", "code": "UEF122", "icon": "💻" },
+    { "id": "circuits-electriques", "name": "Circuits Electriques", "code": "UEF141", "icon": "🔌" },
+    { "id": "electromagnetisme", "name": "Electromagnétisme", "code": "UEF142", "icon": "🧲" },
+    { "id": "mecanique", "name": "Mécanique", "code": "UEF132", "icon": "⚙️" },
+    { "id": "optique", "name": "Optique", "code": "UEF131", "icon": "🔭" },
+    { "id": "francais-1", "name": "Français 1", "code": "UET111", "icon": "🇫🇷" },
+    { "id": "atelier-study-skills-1", "name": "Atelier Study Skills 1", "code": "UET113", "icon": "🧠" },
+    { "id": "2cn", "name": "2CN", "code": "UET112", "icon": "🖥️" }
+  ]
+}

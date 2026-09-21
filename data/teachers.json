@@ -1,0 +1,15 @@
+{
+  "_comment": "Enseignants extraits de l'emploi du temps de démonstration fourni. Données de démonstration uniquement.",
+  "teachers": [
+    { "id": "s-rajia", "name": "S. Rajia", "subjects": ["Analyse 1"] },
+    { "id": "d-ben-ayed", "name": "D. Ben Ayed", "subjects": ["ASD"] },
+    { "id": "a-tlili", "name": "A. Tlili", "subjects": ["Circuits Electriques"] },
+    { "id": "h-chaabouni", "name": "H. Chaabouni", "subjects": ["Electromagnétisme"] },
+    { "id": "t-khemiri", "name": "T. Khemiri", "subjects": ["Atelier Prog 1"] },
+    { "id": "h-aissa", "name": "H. Aissa", "subjects": ["Algèbre 1"] },
+    { "id": "h-ben-abdallah", "name": "H. Ben Abdallah", "subjects": ["Mécanique"] },
+    { "id": "s-zaouali", "name": "S. Zaouali", "subjects": ["Français 1"] },
+    { "id": "f-kooli", "name": "F. Kooli", "subjects": ["2CN"] },
+    { "id": "m-ferchichi", "name": "M. Ferchichi", "subjects": ["Optique"] }
+  ]
+}

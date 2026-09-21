@@ -1,0 +1,13 @@
+{
+  "_comment": "Utilisateurs de démonstration - modifiable facilement. NE PAS ajouter d'emails/infos non fournis.",
+  "allowedEmails": [
+    {
+      "email": "mohamedraed.azouzi@etudiant-isi.utm.tn",
+      "fullName": "Mohamed Raed Azouzi",
+      "firstName": "Raed",
+      "aliases": ["Raed", "Raed Azouzi", "Azouzi"],
+      "role": "student",
+      "studentProfileId": "raed-azouzi"
+    }
+  ]
+}

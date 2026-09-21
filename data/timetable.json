@@ -1,0 +1,28 @@
+{
+  "_comment": "Emploi du temps de démonstration, reconstruit à partir d'une capture d'écran fournie par le créateur (semaine du 07/09). Ce n'est PAS un emploi du temps officiel actuel — voir avertissement dans l'app.",
+  "referenceWeek": { "start": "2026-09-07", "end": "2026-09-11" },
+  "sessions": [
+    { "id": 1,  "day": "monday",    "start": "08:00", "end": "09:30", "subject": "Analyse 1",              "teacher": "S. Rajia",         "room": "A206", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+    { "id": 2,  "day": "monday",    "start": "09:40", "end": "11:10", "subject": "Atelier Prog 1",          "teacher": "T. Khemiri",       "room": "A124", "block": "A", "floor": 1, "type": "CI", "group": "G2" },
+    { "id": 3,  "day": "monday",    "start": "11:20", "end": "12:50", "subject": "Algèbre 1",                "teacher": "H. Aissa",         "room": "A131", "block": "A", "floor": 1, "type": "CI", "group": "G2" },
+    { "id": 4,  "day": "monday",    "start": "13:40", "end": "16:50", "subject": "Atelier Prog 1",          "teacher": "T. Khemiri",       "room": "A402", "block": "A", "floor": 4, "type": "TP", "group": "G2" },
+
+    { "id": 5,  "day": "tuesday",   "start": "08:00", "end": "09:30", "subject": "ASD",                      "teacher": "D. Ben Ayed",      "room": "B401", "block": "B", "floor": 4, "type": "CI", "group": "G2" },
+    { "id": 6,  "day": "tuesday",   "start": "09:40", "end": "11:10", "subject": "Algèbre 1",                "teacher": "H. Aissa",         "room": "A208", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+    { "id": 7,  "day": "tuesday",   "start": "11:20", "end": "12:50", "subject": "Analyse 1",                "teacher": "S. Rajia",         "room": "B302", "block": "B", "floor": 3, "type": "CI", "group": "G2" },
+    { "id": 8,  "day": "tuesday",   "start": "13:40", "end": "16:50", "subject": "2CN",                      "teacher": "F. Kooli",         "room": "C101", "block": "C", "floor": 1, "type": "TP", "group": "G2" },
+
+    { "id": 9,  "day": "wednesday", "start": "08:00", "end": "09:30", "subject": "Circuits Electriques",     "teacher": "A. Tlili",         "room": "A209", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+    { "id": 10, "day": "wednesday", "start": "09:40", "end": "11:10", "subject": "Mécanique",                "teacher": "H. Ben Abdallah",  "room": "B302", "block": "B", "floor": 3, "type": "CI", "group": "G2" },
+    { "id": 11, "day": "wednesday", "start": "11:20", "end": "12:50", "subject": "Mécanique",                "teacher": "H. Ben Abdallah",  "room": "B302", "block": "B", "floor": 3, "type": "CI", "group": "G2" },
+
+    { "id": 12, "day": "thursday",  "start": "08:00", "end": "09:30", "subject": "Electromagnétisme",        "teacher": "H. Chaabouni",     "room": "A209", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+    { "id": 13, "day": "thursday",  "start": "09:40", "end": "11:10", "subject": "Electromagnétisme",        "teacher": "H. Chaabouni",     "room": "A209", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+    { "id": 14, "day": "thursday",  "start": "11:20", "end": "12:50", "subject": "Français 1",               "teacher": "S. Zaouali",       "room": "A206", "block": "A", "floor": 2, "type": "TD", "group": "G2" },
+    { "id": 15, "day": "thursday",  "start": "13:40", "end": "15:10", "subject": "Optique",                  "teacher": "M. Ferchichi",     "room": "A209", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+
+    { "id": 16, "day": "friday",    "start": "08:00", "end": "09:30", "subject": "ASD",                      "teacher": "D. Ben Ayed",      "room": "C402", "block": "C", "floor": 4, "type": "CI", "group": "G2" },
+    { "id": 17, "day": "friday",    "start": "09:40", "end": "11:10", "subject": "Circuits Electriques",     "teacher": "A. Tlili",         "room": "A208", "block": "A", "floor": 2, "type": "CI", "group": "G2" },
+    { "id": 18, "day": "friday",    "start": "11:20", "end": "12:50", "subject": "Atelier study skills 1",   "teacher": "À compléter",      "room": "A131", "block": "A", "floor": 1, "type": "TD", "group": "G2" }
+  ]
+}
