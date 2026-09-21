@@ -1,0 +1,1263 @@
+{
+  "semester": 1,
+  "ues": [
+    {
+      "code": "UEF110",
+      "name": "Mathématique 1",
+      "ecues": [
+        {
+          "code": "UEF111",
+          "name": "Algèbre 1",
+          "bibliography": [
+            "Nombres complexes, polynômes et fractions rationnelles : Exercices corrigés avec rappels de cours",
+            "Initiation à l’analyse et à l’algèbre en L1 : Cours et exercices corrigés Sylvie Guerre-Delabrière,"
+          ],
+          "chapters": [
+            {
+              "id": "uef111-ch1",
+              "chapter": 1,
+              "title": "Nombres complexes",
+              "description": [
+                "Introduction aux nombres complexes, propriétés algébriques, représentation géométrique."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef111-ch2",
+              "chapter": 2,
+              "title": "Vocabulaire ensembliste",
+              "description": [
+                "Eléments de la théorie des ensembles.",
+                "Applications, relation d’ordre, relation d’équivalence.",
+                "Classes d’équivalence. Exemple Z/nZ."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef111-ch3",
+              "chapter": 3,
+              "title": "Arithmétique",
+              "description": [
+                "Division euclidienne dans Z . Divisibilité, PGCD, PPCM, Théorème de Gauss, Théorème de Bezout.",
+                "Algorithme d’Euclide.",
+                "Théorème de Fermat."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef111-ch4",
+              "chapter": 4,
+              "title": "Polynômes et fractions rationnelles",
+              "description": [
+                "Généralités sur les polynômes d’une variable à coeﬀicients réels ou complexes.",
+                "Racines d’un polynôme. Formule de Taylor.",
+                "Division euclidienne dans R[X], C[X] ; factorisation, PGCD, PPCM.",
+                "Décomposition en éléments simples dans R(X), C(X)."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef111-ch5",
+              "chapter": 5,
+              "title": "Groupes, Anneaux et Corps",
+              "description": [
+                "Notions de groupes, sous-groupes. Ordre d’un élément. Sous-groupe engendré par un élément. Groupes cycliques."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF112",
+          "name": "Analyse 1",
+          "bibliography": [
+            "Initiation à l’analyse et à l’algèbre en L1 : Cours et exercices corrigés Sylvie Guerre-Delabrière,",
+            "Informatique 1",
+            "Code UE: UEF120",
+            "Crédits ECTS : 7",
+            "Connaissances de base en algorithmique et structures de données."
+          ],
+          "chapters": [
+            {
+              "id": "uef112-ch1",
+              "chapter": 1,
+              "title": "Suites numériques",
+              "description": [
+                "Généralités – Convergence – unicité de la limite",
+                "Opérations sur les suites - convergence des suites monotones",
+                "Suites adjacentes - suites particulières."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef112-ch2",
+              "chapter": 2,
+              "title": "Fonction numérique d’une variable",
+              "description": [
+                "Notions de continuité, de dérivabilité, du théorème des valeurs intermédiaires.",
+                "Fonction continue strictement croissante sur un intervalle. Théorème des accroissements finis.",
+                "Fonctions hyperboliques, trigonométriques réciproques.",
+                "Développements limités. Formule de Taylor."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef112-ch3",
+              "chapter": 3,
+              "title": "Calcul de primitives",
+              "description": [
+                "Primitives usuelles. Primitives des fractions rationnelles.",
+                "Formule de changement de variables. Intégration par parties. Applications."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef112-ch4",
+              "chapter": 4,
+              "title": "Équations différentielles",
+              "description": [
+                "Equations différentielles du premier ordre, méthode de la variation de la constante.",
+                "Equations différentielles linéaires du second ordre à coeﬀicients constants, méthodes analytiques de résolution."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UEF120",
+      "name": "Informatique 1",
+      "ecues": [
+        {
+          "code": "UEF121",
+          "name": "Algorithmique et Structures des Données",
+          "bibliography": [
+            "Divay, Michel. Algorithmes et structures de données génériques. Edition Dunod, 1999.",
+            "Sedgewick, Robert, and Kevin Wayne. Algorithms. Addison-wesley professional, 2011.",
+            "Erickson, Jeff. Algorithms. 2023."
+          ],
+          "chapters": [
+            {
+              "id": "uef121-ch1",
+              "chapter": 1,
+              "title": "Introduction à l’algorithmique",
+              "description": [
+                "Définition et rôle des algorithmes",
+                "Étapes de résolution d’un problème"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef121-ch2",
+              "chapter": 2,
+              "title": "Fondements des Structures Algorithmiques",
+              "description": [
+                "Variables, constantes et types de données simples",
+                "Expressions et opérateurs",
+                "Structures conditionnelles",
+                "Structures itératives"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef121-ch3",
+              "chapter": 3,
+              "title": "Modularité des Algorithmes",
+              "description": [
+                "Décomposition modulaire",
+                "Procédures et fonctions",
+                "Passage de paramètres (par valeur et par adresse)",
+                "Variables locales et globales"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef121-ch4",
+              "chapter": 4,
+              "title": "Structures de Données Statiques",
+              "description": [
+                "Tableaux : unidimensionnels et bidimensionnels",
+                "Enregistrements : définition et manipulation"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef121-ch5",
+              "chapter": 5,
+              "title": "Algorithmes de Recherche et de Tri",
+              "description": [
+                "Recherche dans un tableau : recherche séquentielle, recherche par sentinelle, recherche dichotomique.",
+                "Algorithmes de tri : tri élémentaire (sélection, insertion, bulles), tri avancé (rapide, fusion)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef121-ch6",
+              "chapter": 6,
+              "title": "Introduction aux Pointeurs et Structures Dynamiques",
+              "description": [
+                "Définition et opérations fondamentales: adressage et déréférencement",
+                "Pointeurs et tableaux",
+                "Introduction à l’allocation dynamique de mémoire",
+                "Passage de paramètres par adresse"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef121-ch7",
+              "chapter": 7,
+              "title": "Récursivité",
+              "description": [
+                "Définition et principes",
+                "Comparaison entre un algorithme itératif vs un algorithme récursif",
+                "Applications classiques : Factorielle, Fibonacci, Tours de Hanoï"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF122",
+          "name": "Atelier Programmation 1",
+          "bibliography": [
+            "Kernighan, B.W., & Ritchie, D.M. (1988). The C Programming Language (2nd Edition). Prentice",
+            "Deitel, P., & Deitel, H. (2016). C How to Program (8th Edition). Pearson.",
+            "King, K. N. (2008). C Programming: A Modern Approach (2nd Edition). W. W. Norton &",
+            "Documentation oﬀicielle du langage C : https://en.cppreference.com/w/c",
+            "Tutoriels C en ligne : https://www.tutorialspoint.com/cprogramming/"
+          ],
+          "chapters": [
+            {
+              "id": "uef122-ch1",
+              "chapter": 1,
+              "title": "Introduction à la programmation C",
+              "description": [
+                "Historique et caractéristiques du langage C",
+                "Environnement de développement (GCC, Code::Blocks, Visual Studio Code, etc.)",
+                "Structure d’un programme en C",
+                "Compilation, édition de liens et exécution d’un programme"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef122-ch2",
+              "chapter": 2,
+              "title": "Types de données et Opérations",
+              "description": [
+                "Types de base (int, float, char, double, etc.)",
+                "Déclaration et initialisation des variables",
+                "Opérateurs arithmétiques, relationnels et logiques",
+                "Opérateurs d’incrémentation et de décrémentation"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef122-ch3",
+              "chapter": 3,
+              "title": "Structures de contrôle",
+              "description": [
+                "Instructions conditionnelles : if, if-else, switch-case",
+                "Boucles : for, while, do-while",
+                "Instructions de saut : break, continue, goto"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef122-ch4",
+              "chapter": 4,
+              "title": "Tableaux et chaînes de caractères",
+              "description": [
+                "Déclaration et manipulation des tableaux",
+                "Tableaux à une et plusieurs dimensions",
+                "Chaînes de caractères et leur manipulation (strlen, strcpy, strcat, etc.)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef122-ch5",
+              "chapter": 5,
+              "title": "Fonctions en C",
+              "description": [
+                "Définition et appel de fonctions",
+                "Passage de paramètres (valeur et adresse)",
+                "Portée des variables (globale, locale, statique)",
+                "Fonctions récursives"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef122-ch6",
+              "chapter": 6,
+              "title": "Pointeurs et allocation dynamique",
+              "description": [
+                "Notion de pointeur et manipulation",
+                "Pointeurs et tableaux",
+                "Pointeurs et chaînes de caractères",
+                "Allocation dynamique (malloc, calloc, free)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef122-ch7",
+              "chapter": 7,
+              "title": "Enregistrements (Structures en C)",
+              "description": [
+                "Définition et déclaration d’une struct",
+                "Accès aux membres d’une structure",
+                "Utilisation de typedef avec les structures",
+                "Tableaux de structures"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UEF130",
+      "name": "Physique 1",
+      "ecues": [
+        {
+          "code": "UEF131",
+          "name": "Optique",
+          "bibliography": [
+            "Optique géométrique et physique, M. Born et E. Wolf, Dunod",
+            "Physique tout-en-un pour la licence, Laurent Gautron, Dunod",
+            "Cours et exercices d’optique, Jean-Paul Porisat, Dunod",
+            "Supports numériques : Simulations interactives (PhET, GeoGebra Optics)"
+          ],
+          "chapters": [
+            {
+              "id": "uef131-ch1",
+              "chapter": 1,
+              "title": "Introduction à l’optique géométrique",
+              "description": [
+                "Nature et caractéristiques de la lumière (ondes et photons)",
+                "Propagation rectiligne de la lumière et principe de Fermat",
+                "Approximation de l’optique géométrique et hypothèses fondamentales"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef131-ch2",
+              "chapter": 2,
+              "title": "Réflexion et réfraction",
+              "description": [
+                "Lois fondamentales de la réflexion et de la réfraction",
+                "Réflexion totale interne et applications (fibres optiques, mirages)",
+                "Miroirs plans et sphériques : construction d’images"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef131-ch3",
+              "chapter": 3,
+              "title": "Dioptres et lentilles minces",
+              "description": [
+                "Dioptres plans et sphériques : équations et propriétés optiques",
+                "Lentilles minces convergentes et divergentes : étude analytique et construction graphique des images",
+                "Grandissement, vergence et puissance optique"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef131-ch4",
+              "chapter": 4,
+              "title": "Systèmes optiques et instruments",
+              "description": [
+                "Dispersion de la lumière par un prisme, spectres lumineux",
+                "Association de lentilles : formation des images et applications",
+                "Correction des défauts visuels (myopie, hypermétropie, presbytie, astigmatisme)",
+                "Étude des instruments optiques : loupe, microscope, télescope, appareil photo"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF132",
+          "name": "Mécanique",
+          "bibliography": [
+            "Mécanique du point – A. Gibaud M. Henry, Dunod",
+            "Cours de mécanique – J.M. Brébec, Hachette Livre",
+            "Exercices et problèmes de mécanique – A. M. Clausset F. Clausset, Dunod",
+            "Supports en ligne : plateformes interactives et simulations numériques",
+            "Électricité 1"
+          ],
+          "chapters": [
+            {
+              "id": "uef132-ch1",
+              "chapter": 1,
+              "title": "Cinématique du point matériel",
+              "description": [
+                "Notion de point matériel, trajectoire et référentiels",
+                "Vecteur position, vitesse et accélération",
+                "Mouvement rectiligne uniforme et uniformément accéléré"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef132-ch2",
+              "chapter": 2,
+              "title": "Cinématique avec changement de référentiel",
+              "description": [
+                "Référentiels galiléens et non galiléens",
+                "Lois de composition des vitesses et des accélérations",
+                "Applications aux mouvements des satellites et véhicules en rotation"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef132-ch3",
+              "chapter": 3,
+              "title": "Dynamique du point matériel",
+              "description": [
+                "Principe d’inertie et deuxième loi de Newton",
+                "Forces usuelles : gravité, frottement, tension, réaction normale",
+                "Applications aux systèmes simples"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef132-ch4",
+              "chapter": 4,
+              "title": "Travail et énergie",
+              "description": [
+                "Travail d’une force et puissance mécanique",
+                "Énergie cinétique et potentielle",
+                "Théorème de l’énergie cinétique et conservation"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef132-ch5",
+              "chapter": 5,
+              "title": "Résolution de problèmes pratiques",
+              "description": [
+                "Statique et équilibre des forces",
+                "Mouvements oscillatoires simples",
+                "Études de cas et exercices globaux"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UEF140",
+      "name": "Électricité 1",
+      "ecues": [
+        {
+          "code": "UEF141",
+          "name": "Circuits électriques",
+          "bibliography": [
+            "Yves Granjon, ÉLECTRICITÉ EXERCICES ET MÉTHODES, Dunod, 2017.",
+            "E. Krasnopol, Réseaux linéaires - Méthodes et applications, Castella, 2003."
+          ],
+          "chapters": [
+            {
+              "id": "uef141-ch1",
+              "chapter": 1,
+              "title": "Les circuits électriques au régime continu – Notions de base",
+              "description": [
+                "Courant, tension, résistance.",
+                "Dipôles électriques actifs et passifs.",
+                "Lois de Kirchhoff (nœuds, mailles).",
+                "Théorèmes généraux (superposition, Thévenin, Norton, Millman, Kennelly)."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef141-ch2",
+              "chapter": 2,
+              "title": "Circuit linéaire aux régimes transitoires",
+              "description": [
+                "Relations courant-tension.",
+                "Étude des dipôles passifs linéaires en régime variable.",
+                "Analyse énergétique des circuits transitoires."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef141-ch3",
+              "chapter": 3,
+              "title": "Régime sinusoïdal",
+              "description": [
+                "Notion d’impédance complexe.",
+                "Représentation des grandeurs sinusoïdales (Fresnel).",
+                "Dipôles passifs en régime sinusoïdal (RLC).",
+                "Puissance dissipée dans les dipôles passifs."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef141-ch4",
+              "chapter": 4,
+              "title": "Filtres",
+              "description": [
+                "Fonction de transfert.",
+                "Diagrammes de Bode.",
+                "Filtres passe-bas et passe-haut."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF142",
+          "name": "Electromagnétisme",
+          "bibliography": [
+            "Cours de Physique pour la LicenceÉlectromagnétisme - Tome 2, Daniel Cordier, Juillet 2007",
+            "Cours de Physique; Électromagnétisme T.2; Introduction et Ondes électromagnétique”, Daniel",
+            "Langues, Soft skills et ouverture socio-",
+            "Code UE: UET110",
+            "Crédits ECTS : 6"
+          ],
+          "chapters": [
+            {
+              "id": "uef142-ch1",
+              "chapter": 1,
+              "title": "Lois générales de l’électromagnétisme",
+              "description": [
+                "Introduction à l’électromagnétisme",
+                "Apport de Maxwell",
+                "Equations de Maxwell",
+                "Energie électromagnétique"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef142-ch2",
+              "chapter": 2,
+              "title": "Généralités sur les ondes",
+              "description": [
+                "Notion d’onde",
+                "Nature des ondes",
+                "Types des ondes",
+                "Propagation des ondes"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef142-ch3",
+              "chapter": 3,
+              "title": "Ondes électromagnétiques",
+              "description": [
+                "Spectre des ondes électromagnétiques",
+                "Equations de propagation des champs dans les milieux matériels",
+                "Equations de propagation des champs dans le vide",
+                "Nature de propagation des ondes électromagnétiques"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef142-ch4",
+              "chapter": 4,
+              "title": "Propagation libre des ondes électromagnétiques",
+              "description": [
+                "Propagation sans obstacle",
+                "Réflexion des ondes",
+                "Réfraction des ondes",
+                "Diffraction des ondes"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UET110",
+      "name": "Langues, Soft Skills et ouverture Socio-économique",
+      "ecues": [
+        {
+          "code": "UET111",
+          "name": "Français 1",
+          "bibliography": [
+            "Formation des Formateurs Soft Skills (validée en janvier 2021), JOBS – EFE, groupe Abilways",
+            "Référentiel des métiers et des compétences (Référentiel des métiers Tunisie - Digital Talent)",
+            "Analyse Linguistique des Professions (Canada) : Base de données Analyse Linguistique des",
+            "Université régionale - BELC, Sousse 2019, Module 6A et B : Se former au français professionnel,",
+            "Ingénierie de formation et Didactique"
+          ],
+          "chapters": [
+            {
+              "id": "uet111-ch1",
+              "chapter": 1,
+              "title": "Chapitre 1",
+              "description": [
+                "Travailler sur une variété de situations de communication professionnelle déterminées par un référentiel de compétences langagières."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet111-ch2",
+              "chapter": 2,
+              "title": "Chapitre 2",
+              "description": [
+                "Communiquer avec la hiérarchie et avec l’équipe (rédiger des courriels, prendre la parole devant un public de spécialistes, participer aux échanges latéraux, lire, comprendre ou produire des documents professionnels, respecter les conventions implicites …)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet111-ch3",
+              "chapter": 3,
+              "title": "Chapitre 3",
+              "description": [
+                "Communiquer avec les clients à l’écrit et à l’oral (choisir l’attitude face aux clients, recueillir les besoins des clients, justifier le choix des outils, logiciels, stratégies, argumenter en faveur d’une solution, convaincre, pratiquer l’écoute active et développer la perception de l’interlocuteur, gérer les obstacles et freins à la communication…)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet111-ch4",
+              "chapter": 4,
+              "title": "Chapitre 4",
+              "description": [
+                "Faire le point sur ses propres atouts et ses axes d’amélioration en termes de communication verbale et non verbale."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UET112",
+          "name": "Culture et Compétences Numériques : 2CN",
+          "bibliography": [
+            "https://comprendredigcomp.com/index.html"
+          ],
+          "chapters": [
+            {
+              "id": "uet112-ch1",
+              "chapter": 1,
+              "title": "Informations et données",
+              "description": [
+                "Mener une recherche eﬀicace via des moteurs classiques et des outils d’IA (Google, ChatGPT, Perplexity)",
+                "Mettre en place une veille thématique à l’aide d’outils modernes (Google Alerts, Feedly, Notify, LinkedIn, etc.) la qualité, la fiabilité, l’origine et l’intention d’une information (fact-checking, analyse des biais)",
+                "Identifier les fake news, désinformations, bulles de filtre et algorithmes de personnalisation",
+                "Organiser et structurer des fichiers et dossiers, en local ou sur le cloud (Google Drive, OneDrive, NextCloud)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet112-ch2",
+              "chapter": 2,
+              "title": "Communication et collaboration",
+              "description": [
+                "Interagir avec des individus ou groupes via messagerie, visio, forums, etc.",
+                "Respecter les codes de communication et la netiquette",
+                "Partager des contenus en ligne dans le respect du droit et de l’éthique",
+                "Collaborer à distance (co-édition, gestion de versions, droits d’accès)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet112-ch3",
+              "chapter": 3,
+              "title": "Création de contenu numérique",
+              "description": [
+                "Créer des documents textuels eﬀicaces et structurés (traitement de texte, présentation, carte mentale)",
+                "Produire du contenu multimédia (image, son, vidéo, animation, mashup) avec les outils adéquats",
+                "Adapter les formats et les supports selon la finalité et les publics visés (impression, web, mobile)",
+                "Utiliser et attribuer correctement des licences d’usage (Creative Commons, GPL, etc.)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet112-ch4",
+              "chapter": 4,
+              "title": "Protection et sécurité",
+              "description": [
+                "Sécuriser ses équipements, communications et données (mots de passe robustes, authentification, antivirus, chiffrement, pare-feu)",
+                "Reconnaître les formes de cyberattaques courantes (phishing, ransomware, ingénierie sociale) et adopter les bons réflexes",
+                "Configurer la confidentialité de ses comptes et maîtriser ses traces numériques",
+                "Protéger ses données personnelles en ligne et respecter celles des autres (RGPD, cookies, tracking)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet112-ch5",
+              "chapter": 5,
+              "title": "Environnement technique et évolution du numérique",
+              "description": [
+                "Familiarisation avec les systèmes d’exploitation (Windows, Linux)",
+                "Notions de réseau, IoT, cloud computing",
+                "Pratiques écoresponsables (Green IT)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UET113",
+          "name": "Atelier Study skills 1",
+          "bibliography": [
+            "“Make It Stick: The Science of Successful Learning”** – Peter C. Brown, Henry L. Roediger III,",
+            "“The Talent Code: Greatness Isn’t Born. It’s Grown. Here’s How.” – Daniel Coyle",
+            "“The Art of Learning: An Inner Journey to Optimal Performance” – Josh Waitzkin",
+            "“GTD: Getting Things Done: The Art of Stress-Free Productivity” – David Allen",
+            "“The Mind Map Book: Unlock your creativity, boost your memory, change your life” – Tony"
+          ],
+          "chapters": [
+            {
+              "id": "uet113-ch1",
+              "chapter": 1,
+              "title": "Neurosciences et techniques d’apprentissage avancées",
+              "description": [
+                "Explorer le fonctionnement du cerveau et les processus de mémorisation : Comprendre comment le cerveau traite et mémorise l’information pour améliorer l’eﬀicacité de l’apprentissage.",
+                "Appliquer des méthodes avancées pour renforcer la mémorisation : Utiliser des techniques éprouvées telles que la récupération active, la répétition espacée et la méthode Feynman pour optimiser l’apprentissage à long terme.",
+                "Adapter ses stratégies d’apprentissage à son profil personnel : Identifier son profil de personnalité à l’aide du test DISC et ajuster ses méthodes d’apprentissage en fonction de ses préférences et points forts.",
+                "Utiliser le mind mapping pour organiser l’information : Découvrir le mind mapping comme un outil puissant pour structurer les idées, clarifier les concepts et visualiser les relations entre différentes notions."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet113-ch2",
+              "chapter": 2,
+              "title": "Gestion du temps et productivité en prépa",
+              "description": [
+                "Planification des révisions avec la méthode GTD : Organiser ses révisions en décomposant les tâches en actions concrètes et en priorisant les plus importantes.",
+                "Priorisation des tâches avec la matrice Eisenhower : Distinguer les tâches urgentes et importantes pour éviter la procrastination et se concentrer sur l’essentiel.",
+                "Optimisation de la productivité avec la méthode Pomodoro : Structurer les sessions de travail en intervalles courts pour maintenir une haute productivité tout en prenant des pauses régulières.",
+                "Gestion des révisions avec le mind mapping : Utiliser des cartes mentales pour organiser les tâches, planifier les révisions, et visualiser l’ensemble du programme."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet113-ch3",
+              "chapter": 3,
+              "title": "Concentration et gestion des distractions",
+              "description": [
+                "Stratégies pour maximiser la concentration et éviter la surcharge cognitive.",
+                "Réduction des distractions numériques et techniques de “Deep Work”.",
+                "Exercices de focalisation et de pleine conscience pour améliorer l’attention."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

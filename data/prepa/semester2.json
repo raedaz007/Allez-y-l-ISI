@@ -1,0 +1,1127 @@
+{
+  "semester": 2,
+  "ues": [
+    {
+      "code": "UEF210",
+      "name": "Mathématique 2",
+      "ecues": [
+        {
+          "code": "UEF211",
+          "name": "Algèbre 2",
+          "bibliography": [
+            "Algèbre linéaire : Idées et méthodes, Rémi Ruppli, Ellipses, 2002",
+            "Toute l’algèbre de la Licence - 5e édition, Cours et exercices corrigés, Jean-Pierre Escofier Dunod,"
+          ],
+          "chapters": [
+            {
+              "id": "uef211-ch1",
+              "chapter": 1,
+              "title": "Espaces vectoriels",
+              "description": [
+                "Espaces vectoriels : définitions, propriétés et exemples.",
+                "Sous-espaces vectoriels, sous-espaces supplémentaires.",
+                "Systèmes générateurs, systèmes libres, bases, dimension."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef211-ch2",
+              "chapter": 2,
+              "title": "Applications linéaires",
+              "description": [
+                "Rang et noyau d’une application linéaire, théorème du rang.",
+                "Représentation matricielle.",
+                "Systèmes linéaires.",
+                "Espace Euclidien"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef211-ch3",
+              "chapter": 3,
+              "title": "Calcul matriciel",
+              "description": [
+                "Définition et opérations sur les matrices, rang d’une matrice, matrices inversibles.",
+                "Déterminants."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF212",
+          "name": "Analyse 2",
+          "bibliography": [
+            "Séries numériques : Exercices corrigés avec rappels de cours, Mathieu de Segonzac, Gilbert Monna",
+            "Calcul intégral et séries : Cours élémentaire de mathématiques supérieures - Tome 3, Jean Quinet,",
+            "Informatique 2",
+            "Code UE: UEF220",
+            "Crédits ECTS : 7"
+          ],
+          "chapters": [
+            {
+              "id": "uef212-ch1",
+              "chapter": 1,
+              "title": "Intégrales généralisées.",
+              "description": [
+                "Calcul pratique de quelques intégrales généralisées. Exemples fondamentaux. Convergence absolue.",
+                "Cas des fonctions positives (comparaison et équivalence).",
+                "Règle d’Abel."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef212-ch2",
+              "chapter": 2,
+              "title": "Séries numériques",
+              "description": [
+                "Séries à termes positifs.",
+                "Critères de convergences : Critère de Cauchy, critère d’Alembert, critères de comparaison et d’équivalence.",
+                "Comparaison d’une série numérique et d’une intégrale généralisée.",
+                "Séries alternées."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef212-ch3",
+              "chapter": 3,
+              "title": "Séries entières",
+              "description": [
+                "Rayon de convergence. Somme et produit de séries entières.",
+                "Dérivation et intégration des séries entières.",
+                "Développement en séries entières des fonctions usuelles."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef212-ch4",
+              "chapter": 4,
+              "title": "Séries de Fourier",
+              "description": [
+                "Séries trigonométriques : représentation complexe – calcul des coeﬀicients cas réel et cas complexes",
+                "Séries de Fourier – Développements en séries de FourierThéorème de Dirichletégalité de Parseval – Applications"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UEF220",
+      "name": "Informatique 2",
+      "ecues": [
+        {
+          "code": "UEF221",
+          "name": "Algorithmique et Complexité",
+          "bibliography": [
+            "Thomas H. Cormen, Charles E. Leireson, Ronald L Rivest et Clifford Stein, Introduction à",
+            "Papadimitriou, Christos. “Algorithms, complexity, and the sciences.” Proceedings of the National",
+            "Sedgewick, Robert, and Kevin Wayne. Algorithms: 24-part Lecture Series. Addison-Wesley",
+            "Weiss, Mark Allen. Data structures and algorithm analysis. Benjamin-Cummings Publishing Co.,"
+          ],
+          "chapters": [
+            {
+              "id": "uef221-ch1",
+              "chapter": 1,
+              "title": "Calcul de Complexité",
+              "description": [
+                "Performance des algorithmes et analyse asymptotique",
+                "Notations asymptotiques : O,Ω,Θ",
+                "Complexité au pire des cas, au meilleur des cas et complexité moyenne",
+                "Classes de complexités"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef221-ch2",
+              "chapter": 2,
+              "title": "Structures de Données Dynamiques",
+              "description": [
+                "Listes chaînées : simples, doubles et circulaires",
+                "Implémentation statique et dynamique.",
+                "Opérations fondamentales : insertion, suppression, recherche.",
+                "Piles et files"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef221-ch3",
+              "chapter": 3,
+              "title": "Diviser pour Régner et Complexité des Algorithmes Récursifs",
+              "description": [
+                "Principe du paradigme “Diviser pour régner”",
+                "Exemples classiques : Tri fusion, Tri rapide, recherche dichotomique, etc.",
+                "Analyse de la complexité des algorithmes récursifs: Relation de récurrence, Master Theorem."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef221-ch4",
+              "chapter": 4,
+              "title": "Arbres et Algorithmes Associés",
+              "description": [
+                "Définition et représentation des arbres",
+                "Arbres binaires",
+                "Parcours: préfixé, infixé, postfixé",
+                "Applications classiques."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef221-ch5",
+              "chapter": 5,
+              "title": "Graphes et Algorithmes Associés",
+              "description": [
+                "Définitions et propriétés des graphes",
+                "Représentations des graphes : Matrice d’adjacence, liste d’adjacence.",
+                "Algorithmes de parcours de graphes",
+                "Parcours en largeur (BFS)."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF222",
+          "name": "Atelier Programmation 2",
+          "bibliography": [
+            "Kernighan, B. W., & Ritchie, D. M. (1988). The C Programming Language (2nd ed.). Prentice",
+            "Deitel, P., & Deitel, H. (2015). C How to Program (8th ed.). Pearson.",
+            "King, K. N. (2008). C Programming: A Modern Approach (2nd ed.). W. W. Norton & Company.",
+            "Robert Sedgewick, K. Wayne. (2011). Algorithms in C (Parts 1-5). Addison-Wesley.",
+            "Documentation oﬀicielle de GNU GCC : https://gcc.gnu.org/"
+          ],
+          "chapters": [
+            {
+              "id": "uef222-ch1",
+              "chapter": 1,
+              "title": "Pointeurs avancés",
+              "description": [
+                "Arithmétique des pointeurs",
+                "Pointeurs de pointeurs (double pointeur)",
+                "Pointeurs sur fonctions",
+                "Allocation dynamique avancée"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef222-ch2",
+              "chapter": 2,
+              "title": "Gestion des fichiers",
+              "description": [
+                "Manipulation des fichiers en mode texte",
+                "Manipulation des fichiers en mode binaire",
+                "Fonctions de gestion des fichiers (fopen, fclose, fread, fwrite, fprintf, fscanf)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef222-ch3",
+              "chapter": 3,
+              "title": "Structures de données dynamiques",
+              "description": [
+                "Définition et utilisation des structures (‘struct‘)",
+                "Allocation dynamique et structures",
+                "Listes chaînées (simples, doubles, circulaires)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef222-ch4",
+              "chapter": 4,
+              "title": "Piles (Stacks)",
+              "description": [
+                "Définition et principes des piles (LIFO)",
+                "Implémentation d’une pile avec un tableau",
+                "Implémentation d’une pile avec une liste chaînée",
+                "Applications des piles (ex : conversion d’expressions, gestion de l’historique)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef222-ch5",
+              "chapter": 5,
+              "title": "Files (Queues)",
+              "description": [
+                "Définition et principes des files (FIFO)",
+                "Implémentation d’une file avec un tableau",
+                "Implémentation d’une file avec une liste chaînée",
+                "Variantes des files (double-ended queue, priority queue)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef222-ch6",
+              "chapter": 6,
+              "title": "Arbres",
+              "description": [
+                "Définition et représentation des arbres",
+                "Parcours d’arbres (préfixé, infixé, postfixé)",
+                "Arbres binaires de recherche (insertion, suppression, recherche)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef222-ch7",
+              "chapter": 7,
+              "title": "Introduction aux Graphes",
+              "description": [
+                "Définition et représentations des graphes (matrice d’adjacence, liste d’adjacence)",
+                "Parcours des graphes : parcours en largeur (BFS), parcours en profondeur (DFS)",
+                "Algorithmes fondamentaux sur les graphes (Dijkstra, Floyd-Warshall)",
+                "Applications des graphes (réseaux, planification, intelligence artificielle)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UEF230",
+      "name": "Physique 2",
+      "ecues": [
+        {
+          "code": "UEF231",
+          "name": "Traitement du signal",
+          "bibliography": [
+            "Introduction au traitement du signal, Patrick DUVAUT, François MICHAUT, Michel CHUC,",
+            "Le traitement du signal sous Matlab, André QUINQUIS, Hermes, 2000."
+          ],
+          "chapters": [
+            {
+              "id": "uef231-ch1",
+              "chapter": 1,
+              "title": "Introduction au traitement du signal",
+              "description": [
+                "Notions élémentaires : notion de signal et notion de bruit",
+                "Energie et puissance",
+                "Valeur moyenne d’un signal",
+                "Classification des signaux o Classification phénoménologique o Classification énergétique o Classification morphologique o Classification spectrale"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef231-ch2",
+              "chapter": 2,
+              "title": "Traitement des signaux analogiques",
+              "description": [
+                "Dualité temps-fréquence",
+                "Décomposition en série de Fourier o Equation de synthèse o Equation d’analyse o Egalité de Parseval o Effets d’opérations élémentaires (translation, dérivée, primitive)",
+                "Transformée de Fourier o Passage de la série à la transformée de Fourier o Propriétés de la Transformée de Fourier o Analyse spectrale o Produit de convolution (Théorème de Plancherel) o Relation entre convolution et corrélation (Théoréme de Wienner Kintchine) o Théorème de Parseval",
+                "Représentation d’un système linéaire o Réponse impulsionnelle o Réponse en fréquence o Filtrage des signaux"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef231-ch3",
+              "chapter": 3,
+              "title": "Traitement des signaux numériques",
+              "description": [
+                "Introduction à la Numérisation",
+                "Echantillonnage o Echantillonnage idéal o Problème de repliement spectral o Echantillonnage réel o Echantillonnage – blocage o Décimation/interpolation",
+                "Quantification o Quantification uniforme o Quantification non uniforme",
+                "Transformées de Fourier du signal discret"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF232",
+          "name": "Physique quantique",
+          "bibliography": [
+            "Cohen-Tannoudji, Claude et al.,Mécanique quantique, Tome 1 2. Hermann, 1996.",
+            "Dirac, Paul A. M.,Les principes de la mécanique quantique. Dunod, 2007.",
+            "Griﬀiths, David J., Introduction to Quantum Mechanics. Pearson, 2018 (2e éd.).",
+            "Sakurai, J. J., Mécanique quantique moderne. Pearson, 2011.",
+            "Électricité 2"
+          ],
+          "chapters": [
+            {
+              "id": "uef232-ch1",
+              "chapter": 1,
+              "title": "Introduction à la Physique Quantique",
+              "description": [
+                "Crise de la physique classique",
+                "Limites de la mécanique newtonienne (rayonnement du corps noir, effet photoélectrique).",
+                "Expériences clés : fentes de Young avec électrons, spectres atomiques.",
+                "Postulats fondamentaux"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef232-ch2",
+              "chapter": 2,
+              "title": "Systèmes Quantiques Simples",
+              "description": [
+                "Puits de potentiel infini",
+                "États stationnaires, quantification de l’énergie.",
+                "Analogie avec les bits quantiques (qbits).",
+                "Oscillateur harmonique quantique"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef232-ch3",
+              "chapter": 3,
+              "title": "Informatique Quantique",
+              "description": [
+                "Qubits et portes logiques",
+                "Superposition vs état classique.",
+                "Portes X, Y, Z, H, CNOT (représentation matricielle).",
+                "Algorithmes quantiques"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef232-ch4",
+              "chapter": 4,
+              "title": "Applications Industrielles",
+              "description": [
+                "Cryptographie post-quantique",
+                "Risques pour RSA/ECC, solutions lattice-based (NIST).",
+                "Capteurs quantiques",
+                "Horloges atomiques (GPS), magnétomètres (imagerie médicale)."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UEF240",
+      "name": "Électricité 2",
+      "ecues": [
+        {
+          "code": "UEF241",
+          "name": "Electronique analogique",
+          "bibliography": [
+            "Électronique analogique basse fréquence : composants, circuits, amplification, filtrage cours et",
+            "Electronique analogique : Composants et systèmes complexes, Collection : Technique et ingénierie,"
+          ],
+          "chapters": [
+            {
+              "id": "uef241-ch1",
+              "chapter": 1,
+              "title": "Diodes",
+              "description": [
+                "Théorie des semi-conducteurs",
+                "Etude de la diode (construction et présentation de la jonction PN, polarisations directe et inverse)",
+                "Modélisation des diodes réelles (idéale, avec seuil, avec seuil et résistance)",
+                "Redressement (simple et double alternance)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef241-ch2",
+              "chapter": 2,
+              "title": "Transistors bipolaires",
+              "description": [
+                "Principe et caractéristiques",
+                "Le transistor comme un quadripôle (montages émetteur commun, collecteur commun, base commune)",
+                "Réseau de caractéristiques d’un transistor",
+                "Etude de la polarisation d’un transistor (points de fonctionnement, droites d’attaque et de charge)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef241-ch3",
+              "chapter": 3,
+              "title": "Amplificateur opérationnels",
+              "description": [
+                "Caractéristiques des amplificateurs opérationnels",
+                "Etude de l’amplificateur opérationnel idéal en régime linéaire",
+                "Etude de montages élémentaires (additionneur, soustracteur, inverseur, suiveur, intégrateur, dérivateur)",
+                "Etude des filtres actifs à base d’amplificateurs opérationnels (fonction de transfert et diagrammes de Bodes)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UEF242",
+          "name": "Systèmes logiques",
+          "bibliography": [
+            "Claude Brie, “Logique combinatoire et séquentielle : Méthodes, Outils et Réalisations”, ELLIPSE,",
+            "Jean Lagasse, “Logique combinatoire et séquentielle”, DUNOD, 1969.",
+            "Langues, Soft skills et ouverture socio-",
+            "Code UE: UET210",
+            "Crédits ECTS : 6"
+          ],
+          "chapters": [
+            {
+              "id": "uef242-ch1",
+              "chapter": 1,
+              "title": "Les Systèmes de Numération et de Conversion",
+              "description": [
+                "Circuits digitaux et réseaux de commutation",
+                "Systèmes de numération et conversions"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef242-ch2",
+              "chapter": 2,
+              "title": "Algèbre de Boole et Portes Logiques",
+              "description": [
+                "Opérateurs et opérations de base",
+                "Expressions Booléennes et tables de vérité",
+                "Théorèmes et lois de base",
+                "Le OU exclusif et opérations équivalentes"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef242-ch3",
+              "chapter": 3,
+              "title": "Les circuits combinatoires",
+              "description": [
+                "Codeurs - Décodeurs",
+                "Transcodeurs",
+                "Multiplexeurs - Démultiplexeurs",
+                "Additionneur - Soustracteur"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uef242-ch4",
+              "chapter": 4,
+              "title": "Les circuits Séquentiels",
+              "description": [
+                "Les bascules (Asynchrone (RS) et Synchrones (RST, D, T et JK) ;",
+                "Les compteurs Asynchrone et Synchrones ;",
+                "Les registres à décalages"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "UET210",
+      "name": "Langues, Soft Skills et ouverture Socio-économique",
+      "ecues": [
+        {
+          "code": "UET211",
+          "name": "Anglais 1",
+          "bibliography": [],
+          "chapters": [
+            {
+              "id": "uet211-ch1",
+              "chapter": 1,
+              "title": "Introduction à l’anglais technique",
+              "description": [
+                "Caractéristiques de l’anglais technique",
+                "Faux-amis et pièges à éviter",
+                "Lexique de base en informatique, ingénierie, télécoms…"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet211-ch2",
+              "chapter": 2,
+              "title": "Lire et comprendre des documents techniques",
+              "description": [
+                "Compréhension de manuels d’utilisation, fiches techniques",
+                "Lecture de rapports ou de normes",
+                "Identification de mots-clés et expressions techniques"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet211-ch3",
+              "chapter": 3,
+              "title": "Rédiger des documents professionnels",
+              "description": [
+                "E-mails professionnels : structure, ton, formules de politesse",
+                "Rédiger une notice, une description de produit ou une procédure",
+                "Révision et correction"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet211-ch4",
+              "chapter": 4,
+              "title": "Présenter un projet ou une idée",
+              "description": [
+                "Préparer une présentation orale (structure, vocabulaire)",
+                "Prise de parole : clarté, accent, rythme",
+                "Utiliser des supports (slides, schémas) en anglais"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet211-ch5",
+              "chapter": 5,
+              "title": "Interagir en contexte professionnel",
+              "description": [
+                "Se présenter, parler de son parcours et de son entreprise",
+                "Participer à une réunion (exprimer un avis, poser une question)",
+                "Jeux de rôle : simulation de réunion, présentation de projet, entretiens"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet211-ch6",
+              "chapter": 6,
+              "title": "Socializing en milieu international",
+              "description": [
+                "Briser la glace, parler de soi, de ses hobbies",
+                "Initiation au small talk (événements, météo, voyages…)",
+                "Attitudes interculturelles, différences culturelles dans la communication"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UET212",
+          "name": "Éthique et droit de l’informatique",
+          "bibliography": [
+            "Loi n° 2010/12/012 du 21 décembre 2010 relative à la cybersécurité et à la cybercriminalité au",
+            "Loi n° 78/17 du 06 janvier 1978, relative à l’informatique, aux fichiers et aux libertés ;",
+            "DIRECTIVE 95/46/CE DU PARLEMENT EUROPÉEN ET DU CONSEIL du 24 octobre 1995",
+            "Loi camerounaise n° 2000/11 du 09-12-200 relative aux droits d’auteurs et aux droits voisins",
+            "La loi Godfrain n° 88/19 du 05 janvier 1988 dont les dispositions sont reprises par le code"
+          ],
+          "chapters": [
+            {
+              "id": "uet212-ch1",
+              "chapter": 1,
+              "title": "La protection des personnes",
+              "description": [
+                "La protection des personnes (données personnelles automatisées, fichiers, libertés, protection des mineurs)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet212-ch2",
+              "chapter": 2,
+              "title": "La protection des consommateurs",
+              "description": [
+                "La protection des consommateurs (jeux, ventes à distance)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet212-ch3",
+              "chapter": 3,
+              "title": "La sécurité des systèmes et des données",
+              "description": [
+                "La sécurité des systèmes et des données (cryptologie, mot de passe, code, signature électronique, licence…)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet212-ch4",
+              "chapter": 4,
+              "title": "La protection des créations intellectuelles",
+              "description": [
+                "La protection des créations intellectuelles (logiciels, bases de données, produits multimédias)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet212-ch5",
+              "chapter": 5,
+              "title": "Aspects contractuels des NTIC",
+              "description": [
+                "Aspects contractuels des NTIC (obligations particulières s’imposant aux informaticiens, les principaux types de contrats, les prestations informatiques, licence, FAI, maintenance, infogérance…)"
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            },
+            {
+              "id": "uet212-ch6",
+              "chapter": 6,
+              "title": "Cyberdroit",
+              "description": [
+                "Cyberdroit (liberté d’expression et ses limites, les aspects internationaux du droit de l’internet, le commerce électronique, la responsabilité des opérateurs de télécommunication – FAI, hébergeurs)."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        },
+        {
+          "code": "UET213",
+          "name": "Atelier Study skills 2",
+          "bibliography": [],
+          "chapters": [
+            {
+              "id": "uet213-ch1",
+              "chapter": 1,
+              "title": "À compléter",
+              "description": [
+                "Contenu non disponible dans le syllabus fourni — à compléter."
+              ],
+              "objectives": [],
+              "status": "not-started",
+              "resources": {
+                "youtube": [],
+                "courses": [],
+                "exercises": [],
+                "corrections": [],
+                "documents": [],
+                "td": [],
+                "tp": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
