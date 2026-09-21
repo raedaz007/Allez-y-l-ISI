@@ -1,0 +1,127 @@
+/* =====================================================
+   THEMES.CSS — Variables de couleurs (clair / sombre)
+   Palette inspirée des images du bâtiment ISI fournies
+   (bleu / blanc / gris) — palette non officielle.
+   ===================================================== */
+
+:root {
+  /* Couleurs de marque (démonstration) */
+  --brand-blue: #2f6fed;
+  --brand-blue-dark: #1e4fc4;
+  --brand-blue-light: #eaf1ff;
+
+  /* Espacements / rayons */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 3px rgba(20, 30, 60, 0.06), 0 1px 2px rgba(20, 30, 60, 0.08);
+  --shadow-md: 0 6px 18px rgba(20, 30, 60, 0.09);
+  --shadow-lg: 0 16px 40px rgba(20, 30, 60, 0.14);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+
+  --sidebar-width: 260px;
+  --topbar-height: 60px;
+}
+
+/* ---------- Mode clair (défaut) ---------- */
+[data-theme="light"] {
+  --bg-app: #f4f6fb;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f8f9fc;
+  --bg-elevated: #ffffff;
+  --bg-hover: #eef2fb;
+  --bg-sidebar: #ffffff;
+  --bg-input: #ffffff;
+
+  --text-primary: #171b2b;
+  --text-secondary: #565d75;
+  --text-muted: #8890a6;
+  --text-inverse: #ffffff;
+
+  --border-color: #e6e9f3;
+  --border-strong: #d3d9ea;
+
+  --accent: var(--brand-blue);
+  --accent-hover: var(--brand-blue-dark);
+  --accent-soft: var(--brand-blue-light);
+  --accent-contrast: #ffffff;
+
+  --success: #1fa971;
+  --success-soft: #e4f8ef;
+  --warning: #e79a1a;
+  --warning-soft: #fdf1de;
+  --danger: #e0473f;
+  --danger-soft: #fdeceb;
+  --info: #2f6fed;
+  --info-soft: #eaf1ff;
+
+  --badge-ci: #2f6fed;
+  --badge-ci-soft: #eaf1ff;
+  --badge-c: #6d4fed;
+  --badge-c-soft: #efeaff;
+  --badge-td: #1fa971;
+  --badge-td-soft: #e4f8ef;
+  --badge-tp: #e79a1a;
+  --badge-tp-soft: #fdf1de;
+  --badge-cc: #e0473f;
+  --badge-cc-soft: #fdeceb;
+
+  --scrollbar-thumb: #c7cee2;
+  color-scheme: light;
+}
+
+/* ---------- Mode sombre ---------- */
+[data-theme="dark"] {
+  --bg-app: #0f1420;
+  --bg-surface: #171d2c;
+  --bg-surface-alt: #1c2333;
+  --bg-elevated: #1e2536;
+  --bg-hover: #232b3f;
+  --bg-sidebar: #12172400;
+  --bg-sidebar: #141a28;
+  --bg-input: #1c2333;
+
+  --text-primary: #eef1fb;
+  --text-secondary: #aab1c9;
+  --text-muted: #767f9b;
+  --text-inverse: #10141f;
+
+  --border-color: #262f45;
+  --border-strong: #333f5c;
+
+  --accent: #5b8dff;
+  --accent-hover: #7ba0ff;
+  --accent-soft: #1c2b4d;
+  --accent-contrast: #0b1020;
+
+  --success: #34c98c;
+  --success-soft: #12301f;
+  --warning: #f0ad3e;
+  --warning-soft: #33260d;
+  --danger: #f2665f;
+  --danger-soft: #3a1917;
+  --info: #5b8dff;
+  --info-soft: #1c2b4d;
+
+  --badge-ci: #5b8dff;
+  --badge-ci-soft: #1c2b4d;
+  --badge-c: #9c85ff;
+  --badge-c-soft: #2a2350;
+  --badge-td: #34c98c;
+  --badge-td-soft: #12301f;
+  --badge-tp: #f0ad3e;
+  --badge-tp-soft: #33260d;
+  --badge-cc: #f2665f;
+  --badge-cc-soft: #3a1917;
+
+  --scrollbar-thumb: #333f5c;
+  color-scheme: dark;
+}
+
+/* Scrollbar discrète */
+* { scrollbar-width: thin; scrollbar-color: var(--scrollbar-thumb) transparent; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }

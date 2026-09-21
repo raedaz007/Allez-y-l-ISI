@@ -1,0 +1,113 @@
+/* =====================================================
+   RESPONSIVE.CSS — Mobile / tablette / desktop / RTL
+   Testé pour : 320, 375, 414, 768, 1024, 1366, 1920px
+   ===================================================== */
+
+/* ---------- Tablette et mobile (<= 1024px) : sidebar devient hamburger ---------- */
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-lg);
+  }
+  html[dir="rtl"] .sidebar { transform: translateX(100%); }
+  .sidebar.open { transform: translateX(0); }
+
+  .main-area { margin-inline-start: 0; }
+  .hamburger-btn { display: flex; }
+
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Tablette (768px) ---------- */
+@media (max-width: 768px) {
+  .content-area { padding: 16px 14px 90px; }
+  .topbar { padding: 0 12px; gap: 10px; }
+  .topbar-search { display: none; }
+  .topbar-search.mobile-visible { display: block; }
+
+  .landing-hero h1 { font-size: 26px; }
+  .landing-hero { padding: 46px 18px 30px; }
+  .landing-cards { grid-template-columns: repeat(2, 1fr); padding: 0 16px; }
+
+  .week-grid { grid-template-columns: 1fr; }
+  .day-column.mobile-hidden { display: none; }
+
+  .card-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+
+  .greeting-banner { flex-direction: column; align-items: flex-start; }
+
+  .chat-shell { height: calc(100vh - var(--topbar-height) - 20px); }
+
+  .stat-mini-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Petits smartphones (<= 414px) ---------- */
+@media (max-width: 414px) {
+  .content-area { padding: 12px 10px 90px; }
+  .page-header h1 { font-size: 19px; }
+  .landing-hero h1 { font-size: 22px; }
+  .landing-hero .hero-emoji { font-size: 36px; }
+  .landing-role-buttons { flex-direction: column; width: 100%; }
+  .landing-role-buttons .btn { width: 100%; }
+
+  .landing-cards { grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 12px; }
+  .card { padding: 14px; }
+
+  .user-chip .user-name { display: none; }
+  .topbar-search { display: none !important; }
+
+  .modal-box { max-width: 100%; border-radius: var(--radius-md); }
+
+  .next-session-timer { font-size: 24px; }
+  .pomodoro-time { font-size: 40px; }
+
+  .semester-toggle { flex-direction: column; }
+
+  .chat-msg { max-width: 88%; }
+
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- Très petits (<= 320px) ---------- */
+@media (max-width: 320px) {
+  .landing-cards { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Grands écrans / desktop large ---------- */
+@media (min-width: 1366px) {
+  .content-area { max-width: 1280px; }
+}
+@media (min-width: 1920px) {
+  .content-area { max-width: 1440px; }
+}
+
+/* ---------- Empêcher tout débordement horizontal ---------- */
+img, table, .week-grid, .card-grid, .room-block-grid { max-width: 100%; }
+table { width: 100%; border-collapse: collapse; display: block; overflow-x: auto; }
+
+/* =====================================================
+   RTL (Arabe) — ajustements spécifiques
+   ===================================================== */
+html[dir="rtl"] .sidebar { border-inline-end: none; border-inline-start: 1px solid var(--border-color); }
+html[dir="rtl"] .next-session-timer,
+html[dir="rtl"] .pomodoro-time { direction: ltr; unicode-bidi: isolate; }
+html[dir="rtl"] .session-block { border-inline-start: none; border-inline-end: 4px solid var(--accent); }
+html[dir="rtl"] .session-block.current { border-inline-end-color: var(--success); }
+html[dir="rtl"] .session-block.next-up { border-inline-end-color: var(--warning); }
+html[dir="rtl"] .chapter-status-icon { transform: none; }
+html[dir="rtl"] .detail-row { flex-direction: row-reverse; }
+html[dir="rtl"] .icon-btn .dot-badge { inset-inline-end: auto; inset-inline-start: 6px; }
+
+/* Focus visibility (accessibilité) */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Print safety (avoid huge dumps) */
+@media print {
+  .sidebar, .topbar, .app-footer, .sidebar-overlay { display: none !important; }
+  .main-area { margin: 0 !important; }
+}
