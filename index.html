@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Allez-y à l'ISI — Votre assistant numérique universitaire</title>
+  <meta name="description" content="Allez-y à l'ISI : projet étudiant indépendant centralisant l'emploi du temps, les salles, la Prépa Intégrée et les ressources pédagogiques de l'ISI." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>" />
+
+  <link rel="stylesheet" href="./css/themes.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- L'application est entièrement rendue par JavaScript -->
+    <noscript>Ce site nécessite JavaScript pour fonctionner (application 100% frontend, sans serveur).</noscript>
+  </div>
+
+  <!-- =====================================================
+       Ordre de chargement important : storage/language/data
+       avant les modules qui en dépendent, "pages.js" avant
+       les fichiers qui enrichissent l'objet Pages.
+       ===================================================== -->
+  <script src="./js/storage.js"></script>
+  <script src="./js/language.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/timetable.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/pages.js"></script>
+  <script src="./js/timetable-pages.js"></script>
+  <script src="./js/rooms.js"></script>
+  <script src="./js/building.js"></script>
+  <script src="./js/teachers.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/prepa.js"></script>
+  <script src="./js/resources.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/calendar.js"></script>
+  <script src="./js/chatbot.js"></script>
+</body>
+</html>
