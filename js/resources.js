@@ -36,7 +36,7 @@ Pages.resources = async function () {
           <option value="2">${t("prepa_semester")} 2</option>
         </select>
         <select id="filter-type" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-input);color:var(--text-primary);">
-          <option value="">Type</option>
+          <option value="">${t("resource_type_filter")}</option>
           ${RESOURCE_TYPES.map(rt => `<option value="${rt.key}">${rt.icon} ${t(rt.labelKey)}</option>`).join("")}
         </select>
         <select id="filter-lang" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-input);color:var(--text-primary);">

@@ -91,5 +91,16 @@ const Storage = {
   getChatHistory() { return this.get("chatHistory", []); },
   setChatHistory(v) { this.set("chatHistory", v.slice(-40)); },
 
+  // Groupe / filière sélectionné par l'utilisateur (ex. "L2CS01", "G2"...)
+  getGroup() { return this.get("group", null); },
+  setGroup(v) { this.set("group", v); },
+
+  // Emploi du temps importé par l'utilisateur (remplace la démo pour son propre affichage).
+  // Tableau de séances au même format que data/timetable.json -> sessions[].
+  getCustomTimetable() { return this.get("customTimetable", null); },
+  setCustomTimetable(sessions) { this.set("customTimetable", sessions); this.set("customTimetableSavedAt", Date.now()); },
+  clearCustomTimetable() { this.remove("customTimetable"); this.remove("customTimetableSavedAt"); },
+  getCustomTimetableSavedAt() { return this.get("customTimetableSavedAt", null); },
+
   // Sidebar state (desktop collapsed not required, only mobile open state kept transient)
 };

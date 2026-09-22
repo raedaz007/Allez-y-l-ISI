@@ -9,10 +9,15 @@ const Pages = {};
 // ---------------- Dashboard ----------------
 Pages.dashboard = async function () {
   const session = App.session;
-  const sessions = await Data.timetable();
+  const { sessions, source } = await Data.timetableInfo();
   const { current, next, nextDayOffset } = Timetable.getCurrentAndNext(sessions);
   const todaySessions = Timetable.sessionsForDay(sessions, Timetable.todayKey());
   const pubs = (await Data.publications()).slice(0, 2);
+  const noGroupDataBanner = source === "none" ? `
+    <div class="warning-box" style="margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+      <span data-i18n="dashboard_no_group_data"></span>
+      <button class="btn btn-primary btn-sm" data-action="nav" data-route="settings" data-i18n="timetable_import_cta"></button>
+    </div>` : "";
 
   let nextBlockHtml = `<div class="empty-state"><div class="empty-emoji">📭</div><p data-i18n="dashboard_no_more_today"></p></div>`;
   if (next) {
@@ -51,6 +56,7 @@ Pages.dashboard = async function () {
       <div style="font-size:34px;">🎓</div>
     </div>
 
+    ${noGroupDataBanner}
     <div class="dashboard-grid">
       <div class="next-session-card">
         <div class="eyebrow" data-i18n="dashboard_next_session"></div>
@@ -458,6 +464,16 @@ Pages.profile = async function () {
 Pages.settings = async function () {
   const theme = Storage.getTheme();
   const lang = Storage.getLang();
+  const cycles = await Data.groups();
+  const currentGroup = Storage.getGroup();
+  const currentCycle = cycles.find(c => c.groups.includes(currentGroup)) || cycles[0];
+  const custom = Storage.getCustomTimetable();
+  const savedAt = Storage.getCustomTimetableSavedAt();
+
+  const importStatusHtml = custom && custom.length
+    ? `✅ ${t("settings_import_active", { count: custom.length, date: savedAt ? new Date(savedAt).toLocaleDateString() : "" })}`
+    : `<span data-i18n="settings_import_none"></span>`;
+
   const html = `
     <div class="page-header"><h1 data-i18n="settings_title"></h1></div>
     <div class="card" style="max-width:520px;margin-bottom:14px;">
@@ -468,6 +484,36 @@ Pages.settings = async function () {
         <button class="lang-option-btn ${lang === "ar" ? "active" : ""}" data-set-lang="ar">🇹🇳 العربية</button>
       </div>
     </div>
+
+    <div class="card" style="max-width:520px;margin-bottom:14px;">
+      <div class="eyebrow" data-i18n="settings_group_title"></div>
+      <p class="card-sub" style="margin:6px 0 12px;" data-i18n="settings_group_desc"></p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <select id="settings-cycle-select" style="flex:1;min-width:140px;padding:9px 10px;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-input);color:var(--text-primary);">
+          ${cycles.map(c => `<option value="${c.id}" ${currentCycle && currentCycle.id === c.id ? "selected" : ""}>${t(c.labelKey)}</option>`).join("")}
+        </select>
+        <select id="settings-group-select" style="flex:1;min-width:140px;padding:9px 10px;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-input);color:var(--text-primary);">
+          ${(currentCycle ? currentCycle.groups : []).map(g => `<option value="${g}" ${g === currentGroup ? "selected" : ""}>${g}</option>`).join("")}
+        </select>
+      </div>
+      <button class="btn btn-primary btn-sm" id="settings-group-save" style="margin-top:12px;" data-i18n="common_save"></button>
+      <p class="card-sub" style="margin-top:10px;" data-i18n="settings_group_note"></p>
+    </div>
+
+    <div class="card" style="max-width:520px;margin-bottom:14px;">
+      <div class="eyebrow" data-i18n="settings_import_title"></div>
+      <p class="card-sub" style="margin:6px 0 10px;" data-i18n="settings_import_desc"></p>
+      <div class="card-sub" id="settings-import-status" style="margin-bottom:12px;">${importStatusHtml}</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <label class="btn btn-outline btn-sm" style="cursor:pointer;">
+          📥 <span data-i18n="settings_import_choose_file"></span>
+          <input type="file" id="settings-import-file" accept="application/json" class="hidden" />
+        </label>
+        <button class="btn btn-ghost btn-sm" id="settings-import-template" data-i18n="settings_import_template"></button>
+        ${custom && custom.length ? `<button class="btn btn-ghost btn-sm" id="settings-import-clear" data-i18n="settings_import_clear"></button>` : ""}
+      </div>
+    </div>
+
     <div class="card" style="max-width:520px;">
       <div class="settings-row">
         <div><div class="settings-row-label" data-i18n="settings_dark_mode"></div><div class="settings-row-desc" data-i18n="settings_dark_mode_desc"></div></div>
@@ -495,6 +541,31 @@ Pages.settings = async function () {
     });
     document.getElementById("settings-theme-switch").addEventListener("click", () => { App.toggleTheme(); App.route(); });
     document.getElementById("settings-notif-switch").addEventListener("click", () => { Notifications.toggle(); App.route(); });
+
+    const cycleSelect = document.getElementById("settings-cycle-select");
+    const groupSelect = document.getElementById("settings-group-select");
+    cycleSelect.addEventListener("change", () => {
+      const c = cycles.find(x => x.id === cycleSelect.value);
+      groupSelect.innerHTML = (c ? c.groups : []).map(g => `<option value="${g}">${g}</option>`).join("");
+    });
+    document.getElementById("settings-group-save").addEventListener("click", () => {
+      if (!groupSelect.value) return;
+      Storage.setGroup(groupSelect.value);
+      App.showToast("🎓", t("settings_group_saved"));
+      App.navigate("dashboard");
+      App.route();
+    });
+
+    document.getElementById("settings-import-template").addEventListener("click", () => downloadTimetableTemplate());
+    const fileInput = document.getElementById("settings-import-file");
+    fileInput.addEventListener("change", () => handleTimetableImport(fileInput));
+    const clearBtn = document.getElementById("settings-import-clear");
+    if (clearBtn) clearBtn.addEventListener("click", () => {
+      Storage.clearCustomTimetable();
+      App.showToast("🧹", t("settings_import_cleared"));
+      App.route();
+    });
+
     document.getElementById("settings-reset-btn").addEventListener("click", () => {
       App.openModal(`
         <div class="modal-header"><h3 data-i18n="settings_reset_confirm"></h3><button class="modal-close" data-close-modal>✕</button></div>
@@ -515,6 +586,49 @@ Pages.settings = async function () {
   }, 0);
   return html;
 };
+
+// ---------------- Import d'emploi du temps personnel ----------------
+function downloadTimetableTemplate() {
+  const template = {
+    _comment: "Modifiez ce fichier avec vos propres séances puis importez-le depuis Paramètres > Importer mon emploi du temps.",
+    sessions: [
+      { id: 1, day: "monday", start: "08:00", end: "09:30", subject: "Nom de la matière", teacher: "Nom de l'enseignant", room: "A101", block: "A", floor: 1, type: "CI", group: "MonGroupe" }
+    ]
+  };
+  const blob = new Blob([JSON.stringify(template, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "modele-emploi-du-temps.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function handleTimetableImport(fileInput) {
+  const file = fileInput.files && fileInput.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      const sessions = Array.isArray(parsed) ? parsed : parsed.sessions;
+      if (!Array.isArray(sessions) || !sessions.length) throw new Error("empty");
+      const valid = sessions.every(s => s && s.day && s.start && s.end && s.subject);
+      if (!valid) throw new Error("invalid shape");
+      const normalized = sessions.map((s, i) => ({ id: s.id ?? i + 1, day: s.day, start: s.start, end: s.end, subject: s.subject, teacher: s.teacher || "", room: s.room || "", block: s.block || "", floor: s.floor ?? "", type: s.type || "CI", group: s.group || Storage.getGroup() || "" }));
+      Storage.setCustomTimetable(normalized);
+      App.showToast("✅", t("settings_import_success"));
+      App.navigate("timetable");
+      App.route();
+    } catch (e) {
+      App.showToast("⚠️", t("settings_import_error"));
+    }
+    fileInput.value = "";
+  };
+  reader.readAsText(file, "utf-8");
+}
 
 // ---------------- À propos ----------------
 Pages.about = async function () {

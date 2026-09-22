@@ -51,6 +51,12 @@ const App = {
       return;
     }
 
+    // Groupe par défaut = groupe du profil de démonstration, tant que
+    // l'utilisateur n'a pas choisi un autre groupe dans Paramètres.
+    if (!Storage.getGroup() && this.session.profile && this.session.profile.group) {
+      Storage.setGroup(this.session.profile.group);
+    }
+
     this.renderShell();
     this.route();
     Notifications.scheduleChecks();

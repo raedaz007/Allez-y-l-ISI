@@ -4,11 +4,28 @@
 // =====================================================
 
 Pages.timetable = async function (params) {
-  const sessions = await Data.timetable();
+  const { sessions, source } = await Data.timetableInfo();
   const mode = (params && params[0]) || "week";
   const { current } = Timetable.getCurrentAndNext(sessions);
   const dayLabels = { monday: "day_monday", tuesday: "day_tuesday", wednesday: "day_wednesday", thursday: "day_thursday", friday: "day_friday" };
   const weekDays = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+
+  if (source === "none") {
+    const html = `
+      <div class="page-header"><h1 data-i18n="nav_timetable"></h1></div>
+      <div class="empty-state">
+        <div class="empty-emoji">📥</div>
+        <p data-i18n="timetable_no_group_data"></p>
+        <button class="btn btn-primary" style="margin-top:12px;" data-action="nav" data-route="settings" data-i18n="timetable_import_cta"></button>
+      </div>
+    `;
+    setTimeout(bindNavActions, 0);
+    return html;
+  }
+
+  const sourceBanner = source === "custom"
+    ? `<div class="info-box" style="margin-bottom:14px;" data-i18n="timetable_source_custom"></div>`
+    : `<div class="info-box" style="margin-bottom:14px;" data-i18n="timetable_source_demo"></div>`;
 
   let bodyHtml = "";
   if (mode === "today") {
@@ -31,6 +48,7 @@ Pages.timetable = async function (params) {
 
   const html = `
     <div class="page-header"><h1 data-i18n="nav_timetable"></h1></div>
+    ${sourceBanner}
     <div class="timetable-toolbar">
       <div class="timetable-tabs" id="tt-mode-tabs">
         <button class="${mode === "today" ? "active" : ""}" data-mode="today" data-i18n="timetable_today"></button>

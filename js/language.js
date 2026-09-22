@@ -240,6 +240,46 @@ const I18N = {
 
     day_monday: "Lundi", day_tuesday: "Mardi", day_wednesday: "Mercredi", day_thursday: "Jeudi", day_friday: "Vendredi", day_saturday: "Samedi", day_sunday: "Dimanche",
 
+    cycle_prepa: "Prépa Intégrée",
+    cycle_licence: "Licence",
+    cycle_mastere: "Mastère",
+    cycle_ingenieur: "Ingénieur",
+
+    settings_group_title: "Mon groupe / ma classe",
+    settings_group_desc: "Choisissez votre cycle et votre groupe pour personnaliser votre emploi du temps.",
+    settings_group_note: "Un emploi du temps de démonstration n'est fourni que pour le groupe G2 (Prépa). Pour tout autre groupe, importez votre propre emploi du temps ci-dessous.",
+    settings_group_saved: "Groupe mis à jour",
+
+    settings_import_title: "Importer mon emploi du temps",
+    settings_import_desc: "Chaque utilisateur peut importer son propre emploi du temps (fichier JSON), au lieu de voir un seul emploi du temps partagé par tous.",
+    settings_import_none: "Aucun emploi du temps personnel importé pour le moment.",
+    settings_import_active: "Emploi du temps personnel actif — {count} séance(s), importé le {date}.",
+    settings_import_choose_file: "Choisir un fichier",
+    settings_import_template: "📄 Télécharger un modèle",
+    settings_import_clear: "🗑️ Supprimer l'import",
+    settings_import_cleared: "Emploi du temps personnel supprimé",
+    settings_import_success: "Emploi du temps importé avec succès",
+    settings_import_error: "Fichier invalide. Vérifiez le format (voir le modèle).",
+
+    timetable_no_group_data: "Aucun emploi du temps n'est encore disponible pour votre groupe. Importez le vôtre depuis les Paramètres.",
+    timetable_import_cta: "Importer mon emploi du temps",
+    timetable_source_demo: "ℹ️ Emploi du temps de démonstration (groupe G2) — importez le vôtre depuis Paramètres si vous êtes dans un autre groupe.",
+    timetable_source_custom: "✅ Vous consultez votre emploi du temps personnel importé.",
+    dashboard_no_group_data: "Aucun emploi du temps disponible pour votre groupe pour le moment.",
+
+    resource_type_filter: "Type",
+
+    explore_view_general: "Vue générale",
+    explore_view_exploded: "Vue éclatée",
+    explore_view_cutaway: "Coupe",
+    explore_view_crosssection: "Coupe transversale",
+    explore_3d_title: "Visite virtuelle 3D",
+    explore_3d_desc: "Explorez le bâtiment de l'ISI en 3D, dans votre navigateur. Cet outil est hébergé par un site tiers indépendant du projet.",
+    explore_3d_open: "🔗 Ouvrir dans un nouvel onglet",
+    explore_3d_unavailable: "L'aperçu 3D n'a pas pu se charger ici. Utilisez le bouton ci-dessus pour l'ouvrir directement.",
+
+    teachers_department: "Département",
+
     footer_independent: "Projet indépendant — en cours de développement",
     footer_rights: "Tous droits réservés",
   },
@@ -481,6 +521,46 @@ const I18N = {
 
     day_monday: "Monday", day_tuesday: "Tuesday", day_wednesday: "Wednesday", day_thursday: "Thursday", day_friday: "Friday", day_saturday: "Saturday", day_sunday: "Sunday",
 
+    cycle_prepa: "Preparatory Cycle",
+    cycle_licence: "Bachelor's (Licence)",
+    cycle_mastere: "Master's",
+    cycle_ingenieur: "Engineering",
+
+    settings_group_title: "My group / class",
+    settings_group_desc: "Choose your cycle and group to personalize your timetable.",
+    settings_group_note: "A demo timetable is only provided for group G2 (Prépa). For any other group, import your own timetable below.",
+    settings_group_saved: "Group updated",
+
+    settings_import_title: "Import my timetable",
+    settings_import_desc: "Each user can import their own timetable (JSON file) instead of seeing one timetable shared by everyone.",
+    settings_import_none: "No personal timetable imported yet.",
+    settings_import_active: "Personal timetable active — {count} session(s), imported on {date}.",
+    settings_import_choose_file: "Choose a file",
+    settings_import_template: "📄 Download a template",
+    settings_import_clear: "🗑️ Remove import",
+    settings_import_cleared: "Personal timetable removed",
+    settings_import_success: "Timetable imported successfully",
+    settings_import_error: "Invalid file. Check the format (see the template).",
+
+    timetable_no_group_data: "No timetable is available yet for your group. Import your own from Settings.",
+    timetable_import_cta: "Import my timetable",
+    timetable_source_demo: "ℹ️ Demo timetable (group G2) — import your own from Settings if you're in another group.",
+    timetable_source_custom: "✅ You're viewing your imported personal timetable.",
+    dashboard_no_group_data: "No timetable available for your group yet.",
+
+    resource_type_filter: "Type",
+
+    explore_view_general: "General view",
+    explore_view_exploded: "Exploded view",
+    explore_view_cutaway: "Cutaway",
+    explore_view_crosssection: "Cross-section",
+    explore_3d_title: "Virtual 3D tour",
+    explore_3d_desc: "Explore the ISI building in 3D, right in your browser. This tool is hosted by an independent third-party site.",
+    explore_3d_open: "🔗 Open in a new tab",
+    explore_3d_unavailable: "The 3D preview couldn't load here. Use the button above to open it directly.",
+
+    teachers_department: "Department",
+
     footer_independent: "Independent project — under development",
     footer_rights: "All rights reserved",
   },
@@ -721,6 +801,46 @@ const I18N = {
     common_tomorrow: "غدا",
 
     day_monday: "الإثنين", day_tuesday: "الثلاثاء", day_wednesday: "الأربعاء", day_thursday: "الخميس", day_friday: "الجمعة", day_saturday: "السبت", day_sunday: "الأحد",
+
+    cycle_prepa: "السنة التحضيرية",
+    cycle_licence: "الإجازة",
+    cycle_mastere: "الماجستير",
+    cycle_ingenieur: "الهندسة",
+
+    settings_group_title: "مجموعتي / قسمي",
+    settings_group_desc: "اختر دورتك ومجموعتك لتخصيص جدول حصصك.",
+    settings_group_note: "لا يتوفر جدول حصص تجريبي إلا للمجموعة G2 (تحضيري). لأي مجموعة أخرى، استورد جدولك الخاص أدناه.",
+    settings_group_saved: "تم تحديث المجموعة",
+
+    settings_import_title: "استيراد جدول حصصي",
+    settings_import_desc: "يمكن لكل مستخدم استيراد جدول حصصه الخاص (ملف JSON) بدلاً من الاطلاع على جدول واحد مشترك بين الجميع.",
+    settings_import_none: "لم يتم استيراد أي جدول حصص شخصي بعد.",
+    settings_import_active: "جدول الحصص الشخصي مفعّل — {count} حصة/حصص، تم استيراده بتاريخ {date}.",
+    settings_import_choose_file: "اختيار ملف",
+    settings_import_template: "📄 تحميل نموذج",
+    settings_import_clear: "🗑️ حذف الاستيراد",
+    settings_import_cleared: "تم حذف جدول الحصص الشخصي",
+    settings_import_success: "تم استيراد جدول الحصص بنجاح",
+    settings_import_error: "ملف غير صالح. تحقق من الصيغة (انظر النموذج).",
+
+    timetable_no_group_data: "لا يتوفر بعد أي جدول حصص لمجموعتك. استورد جدولك الخاص من الإعدادات.",
+    timetable_import_cta: "استيراد جدول حصصي",
+    timetable_source_demo: "ℹ️ جدول حصص تجريبي (المجموعة G2) — استورد جدولك الخاص من الإعدادات إذا كنت في مجموعة أخرى.",
+    timetable_source_custom: "✅ أنت تطّلع على جدول حصصك الشخصي المستورد.",
+    dashboard_no_group_data: "لا يتوفر بعد جدول حصص لمجموعتك.",
+
+    resource_type_filter: "النوع",
+
+    explore_view_general: "منظر عام",
+    explore_view_exploded: "منظر مفكك",
+    explore_view_cutaway: "مقطع",
+    explore_view_crosssection: "مقطع عرضي",
+    explore_3d_title: "جولة افتراضية ثلاثية الأبعاد",
+    explore_3d_desc: "استكشف مبنى ISI بتقنية ثلاثية الأبعاد مباشرة من متصفحك. هذه الأداة مستضافة على موقع خارجي مستقل عن المشروع.",
+    explore_3d_open: "🔗 فتح في علامة تبويب جديدة",
+    explore_3d_unavailable: "تعذّر تحميل المعاينة ثلاثية الأبعاد هنا. استخدم الزر أعلاه لفتحها مباشرة.",
+
+    teachers_department: "القسم",
 
     footer_independent: "مشروع مستقل — قيد التطوير",
     footer_rights: "جميع الحقوق محفوظة",

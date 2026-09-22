@@ -25,7 +25,21 @@ const Data = {
   async teachers() { return (await this.load("./data/teachers.json"))?.teachers || []; },
   async subjects() { return (await this.load("./data/subjects.json"))?.subjects || []; },
   async rooms() { return (await this.load("./data/rooms.json"))?.rooms || []; },
-  async timetable() { return (await this.load("./data/timetable.json"))?.sessions || []; },
+  async groups() { return (await this.load("./data/groups.json"))?.cycles || []; },
+
+  // L'emploi du temps affiché dépend du groupe choisi par l'utilisateur :
+  // - s'il a importé son propre emploi du temps -> on l'utilise ;
+  // - sinon, si son groupe correspond au groupe de démonstration (G2) -> emploi du temps fourni ;
+  // - sinon -> aucune donnée (l'utilisateur est invité à importer son emploi du temps).
+  async timetableInfo() {
+    const custom = Storage.getCustomTimetable();
+    if (custom && custom.length) return { sessions: custom, source: "custom" };
+    const group = Storage.getGroup();
+    const demo = (await this.load("./data/timetable.json"))?.sessions || [];
+    if (!group || group === "G2") return { sessions: demo, source: "demo" };
+    return { sessions: [], source: "none" };
+  },
+  async timetable() { return (await this.timetableInfo()).sessions; },
   async publications() { return (await this.load("./data/publications.json"))?.publications || []; },
   async chatbot() { return await this.load("./data/chatbot.json"); },
   async team() { return await this.load("./data/team.json"); },

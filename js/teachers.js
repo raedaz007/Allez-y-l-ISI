@@ -30,6 +30,9 @@ Pages.teachers = async function (params) {
       const q = input.value.trim().toLowerCase();
       const filtered = teachers.filter(tch =>
         tch.name.toLowerCase().includes(q) ||
+        (tch.fullName && tch.fullName.toLowerCase().includes(q)) ||
+        (tch.department && tch.department.toLowerCase().includes(q)) ||
+        (tch.email && tch.email.toLowerCase().includes(q)) ||
         tch.subjects.some(s => s.toLowerCase().includes(q)) ||
         sessions.some(s => s.teacher === tch.name && (s.room.toLowerCase().includes(q) || s.group.toLowerCase().includes(q)))
       );
@@ -47,8 +50,8 @@ function teacherRowHtml(tch) {
   return `
     <div class="list-row" data-teacher-id="${tch.id}" style="cursor:pointer;">
       <div>
-        <div class="list-row-title">👨‍🏫 ${tch.name}</div>
-        <div class="list-row-sub">${tch.subjects.join(", ")}</div>
+        <div class="list-row-title">👨‍🏫 ${tch.fullName || tch.name}</div>
+        <div class="list-row-sub">${tch.subjects.join(", ") || (tch.department ? tch.department : "")}</div>
       </div>
       <span>›</span>
     </div>
@@ -61,15 +64,17 @@ function teacherDetailHtml(teacherId, teachers, sessions) {
     return `<div class="empty-state"><p data-i18n="teachers_no_data"></p></div>
       <button class="btn btn-outline" data-action="nav" data-route="teachers" data-i18n="common_back"></button>` + bindBackButtonSoon();
   }
-  Storage.pushHistory({ id: `teacher-${tch.id}`, type: "teacher", label: tch.name });
+  Storage.pushHistory({ id: `teacher-${tch.id}`, type: "teacher", label: tch.fullName || tch.name });
 
   const tchSessions = sessions.filter(s => s.teacher === tch.name);
   const { next } = Timetable.getCurrentAndNext(tchSessions);
 
   const html = `
-    <div class="page-header"><h1>👨‍🏫 ${tch.name}</h1></div>
+    <div class="page-header"><h1>👨‍🏫 ${tch.fullName || tch.name}</h1></div>
     <div class="card" style="max-width:460px;margin-bottom:16px;">
-      <div class="detail-row"><span class="detail-label" data-i18n="teachers_subjects"></span><span class="detail-value">${tch.subjects.join(", ")}</span></div>
+      ${tch.subjects.length ? `<div class="detail-row"><span class="detail-label" data-i18n="teachers_subjects"></span><span class="detail-value">${tch.subjects.join(", ")}</span></div>` : ""}
+      ${tch.department ? `<div class="detail-row"><span class="detail-label" data-i18n="teachers_department"></span><span class="detail-value">${tch.department}</span></div>` : ""}
+      ${tch.email ? `<div class="detail-row"><span class="detail-label" data-i18n="profile_email"></span><span class="detail-value" style="word-break:break-all;"><bdi dir="ltr">${tch.email}</bdi></span></div>` : ""}
       ${next ? `<div class="detail-row"><span class="detail-label" data-i18n="teachers_next_session"></span><span class="detail-value">${next.subject} — ${next.room}</span></div>` : ""}
     </div>
     ${tchSessions.length ? `
