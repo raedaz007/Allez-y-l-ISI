@@ -1,0 +1,37 @@
+{
+  "_comment": "Liste des groupes/classes de l'ISI fournie par le créateur du projet, utilisée pour que chaque utilisateur puisse sélectionner sa propre classe (voir js/pages.js — Paramètres). Un seul emploi du temps de démonstration (groupe G2, Prépa) est fourni ; pour les autres groupes, l'utilisateur est invité à importer son propre emploi du temps (voir section 'Importer mon emploi du temps').",
+  "cycles": [
+    {
+      "id": "prepa",
+      "labelKey": "cycle_prepa",
+      "groups": ["G2"]
+    },
+    {
+      "id": "licence",
+      "labelKey": "cycle_licence",
+      "groups": [
+        "L1CE01", "L1CE02", "L1GLSI01", "L1GLSI02", "L1GLSI03",
+        "L2IRS01", "L2IRS02", "L2CS01", "L2CS02", "L2CS03", "L2SE01", "L2SE02",
+        "L3CS01", "L3CS02", "L3CS03", "L3IRS01", "L3IRS02", "L3SE01", "L3SE02"
+      ]
+    },
+    {
+      "id": "mastere",
+      "labelKey": "cycle_mastere",
+      "groups": [
+        "M1MDL", "M1MP2L", "M1R", "M1SIIOT", "M1SSII01", "M1SSII-FAD",
+        "M2GL", "M2MDL", "M2MP2L", "M2SIIOT", "M2SIIVA", "M2SSII01", "M2SSII-FAD"
+      ]
+    },
+    {
+      "id": "ingenieur",
+      "labelKey": "cycle_ingenieur",
+      "groups": [
+        "INFOSUP01", "INFOSUP02", "INFOSUP03",
+        "1ING01", "1ING02", "1ING03", "1ING04",
+        "2ING01", "2ING02", "2ING03",
+        "3IDISC", "3IDL01", "3IDL02", "3ISEOC"
+      ]
+    }
+  ]
+}
