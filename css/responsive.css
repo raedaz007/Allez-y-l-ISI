@@ -10,7 +10,14 @@
     box-shadow: var(--shadow-lg);
   }
   html[dir="rtl"] .sidebar { transform: translateX(100%); }
-  .sidebar.open { transform: translateX(0); }
+  /* NOTE : `html[dir="rtl"] .sidebar` a une spécificité CSS plus élevée que
+     `.sidebar.open` (un sélecteur de type en plus), donc sans cette règle
+     dédiée le menu ne s'ouvrait jamais en arabe : la règle RTL fermée
+     gagnait toujours sur l'état ouvert. On égalise la spécificité ici. */
+  .sidebar.open,
+  html[dir="rtl"] .sidebar.open {
+    transform: translateX(0);
+  }
 
   .main-area { margin-inline-start: 0; }
   .hamburger-btn { display: flex; }
