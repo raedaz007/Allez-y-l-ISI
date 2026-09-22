@@ -25,6 +25,10 @@ aucune base de données distante) :
 
 - 🌞/🌙 Thème clair / sombre (sauvegardé localement)
 - 🌐 Multilingue Français / English / العربية avec support RTL complet
+- 🎯 Groupe personnel : chaque utilisateur choisit son cycle/groupe (Licence, Mastère,
+  Ingénieur, Prépa) et peut **importer son propre emploi du temps** (fichier JSON)
+  au lieu de consulter un seul emploi du temps partagé par tout le monde
+- 🧱 Visite 3D interactive du bâtiment (site tiers intégré, en plus des photos fournies)
 - 📅 Emploi du temps interactif (jour / semaine), séance en cours mise en évidence
 - 🏫 Recherche de salle (`A206` → Bloc A, Étage 2, Salle 06)
 - 🗺️ Explorer l'ISI : vue générale, éclatée, coupes, par étage (images fournies)
@@ -197,6 +201,19 @@ rendu de page via `translateStaticDom()`.
 Toutes les données utilisateur (langue, thème, session, favoris, notes,
 tâches, progression, historique) sont stockées localement via `js/storage.js`,
 sous le préfixe `allezy_isi_`. Rien n'est envoyé à un serveur.
+
+## 18bis. Groupe personnel et import d'un emploi du temps
+
+Un seul emploi du temps de démonstration est fourni (groupe **G2**, Prépa Intégrée).
+Depuis **Paramètres**, chaque utilisateur peut :
+- choisir son cycle et son groupe réel parmi la liste complète (`data/groups.json`) ;
+- **importer son propre emploi du temps** au format JSON (bouton "Télécharger un
+  modèle" pour obtenir la structure attendue), stocké localement
+  (`allezy_isi_customTimetable`) et prioritaire sur l'emploi du temps de démonstration.
+
+Si le groupe choisi ne correspond pas à G2 et qu'aucun emploi du temps n'a été
+importé, l'application affiche un message invitant à importer son propre emploi
+du temps plutôt que d'afficher des données inventées ou incorrectes.
 
 ## 19. Limites du projet
 
